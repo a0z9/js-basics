@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn day2</title>
+	</head>
+	<body>
+		<h2>JS Learn. Day2</h2>
+		
+		<script>
+			var log = console.log;
+			var answer = 'Yes';	
+			if (answer == 'Yes')
+				log('Say Ok, do smth...');
+				else
+					log('Say No, do smth else...');
+			
+			// Login check	
+			var login = ' AnD111';
+			if (login.trim().toUpperCase() == 'AND111' &&
+				answer == "Yes" &&
+			    '1' === 1   
+                				
+			)
+				
+			{
+			log('login ' + login + ' is Ok, do smth...');
+			log('2nd line...');
+			}
+			
+			else { 
+			log('login No, do smth else...');	
+				
+			}
+			
+			var testFunc;	
+		    if (!testFunc)
+					console.log("++++ TestFunc Not exists");
+			if (testFunc === undefined)
+					console.log("++++ TestFunc Not exists");
+			
+			// multi if
+			
+			if (testFunc === "") {
+				testFunc="Empty";
+			}
+			else if(testFunc === null) 
+				{testFunc="null"}
+			else if(testFunc === NaN)
+				{testFunc="NaN value"}
+			else {
+				//testFunc = "Some func";
+			}
+			
+			log('---',testFunc,'---');
+			log( (testFunc === "")?'Empty':testFunc  )
+			
+			// practice: groups
+			// g1,g2,g3
+			var group = "g2";
+			if (group === "g1") {
+				log('g1 +++ ');
+				//..
+				//..
+			}else if (group === "g2") {
+					log('g2 ++++');
+					//..
+					//..
+					
+				}
+			
+/// switch-case
+		var selected_value = 'up', x=0, y=0;
+		switch (selected_value.toLowerCase()) {
+			case 'up': y++; break;
+		    case 'down': y--; break;
+		    case 'right': x++; break;
+	        case 'left': x--; break;
+		    default:
+		
+	}			
+			log("x="+x+", y="+y);	
+			
+		</script>
+		
+<script src="js/cycles.js"></script>
+<script src="js/funcs.js"></script>
+
+		
+		<h2>End of file</h2>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS learn</title>
+	</head>
+	<body>
+	<h2>JS Learn. Day1 </h2>
+	
+	<script>
+	const log = console.log;
+	
+	
+	
+	var t=1;
+	console.log("t =",t);
+	log("Logger starts..");
+	
+	var ad = 100, ad1 = 0b10010111101, ad2 = 0o2626726, ad3 = 0xeffff;
+	
+	var b1 = 1.23456789129;
+	log("b1=",b1);
+	log("b1=",b1.toFixed(3));
+	log("b1=",b1.toExponential());
+	
+	
+	// Strings
+	
+	var name = 'Andrei';
+	var greets = 'Hello, ' + name + "!";
+	
+	var car1= "speedy \"bmw\"";
+	var car2= 'speedy "bmw"';
+	var multi = "line1\nline2\nline3...";
+	
+	var data = 'Hello all!' 
+	var left = data.substring(0,data.indexOf(" "));
+	var right = data.substring(data.indexOf(" ")+1);
+	
+	log(left,right.replace("a","A"));
+	
+	var hello2 = (left + ", " + right).toUpperCase();
+	log(hello2);
+	
+	
+	log(greets);
+	//patterns
+	
+	var pattern = /HELLO2/g;
+	log(pattern.test(hello2));
+	
+	//var phone_Bratsk = /^\d{4,6}$/;
+	var phone_Bratsk = /^\d{6}$/;
+	log(phone_Bratsk.test('123456'));
+	log(phone_Bratsk.test('12345677'));
+	log(phone_Bratsk.test('12345'));
+	
+	var phone_Bratsk2 = /^\d{2}-?\d{2}-?\d{2}$/;
+	log("tel2:",phone_Bratsk2.test('12-34-56'));
+		
+	</script>
+	
+	
+	<h2>End of file</h2>	
+	</body>
+</html>
