@@ -13,9 +13,25 @@
 	<div> div1 </div>
 	<div name="data"> div2 </div>
 	<div name="data"> div22 </div>
-	<div> div23 </div>
+	<div class="divlist" unnn="333"> div23 </div>
 	<div id="div3"> div3 </div>
 	</div>
+	
+	<!-- Выбор элемента из списка -->
+	
+	<select id="staticDeptList">
+		<option name="Phys">Физика</option>
+		<option name="IT">IT</option>
+		<option name="Mech">Механика</option>
+	</select>
+	
+	<!-- Выбор элемента из динамич списка -->
+
+	<select id="deptList"></select>
+	
+	<br/>
+	<input  id="name" style="margin: 3px"/> Student name <br/>
+	<input  id="id" style="margin: 3px"/> Student id 
 	
 	
 	
@@ -26,14 +42,44 @@
 		let div3 = div0.lastElementChild;
 	
 		div3.innerHTML = '<p style="font-style:italic; font-weight:bold;">Обучение в БГУ</p>';
+		div2.setAttribute('style',"font:italic bold 24px courier; color:green;");
+		div2.innerText='Dynamic attribute';
 	
+	// get by query selector
+	let div01 = document.querySelector('div[unnn="123"]');
+	
+	// Form dynamic list
+	let deptList=[
+	{name:'Phys',text:"Факультет общей физики"},
+	{name:'Chem',text:"Химический факультет"},
+	{name:'IT',text:"Факультет ИТ"},
+	{name:'Mech',text:"Механико-Математический факультет"}
+	];
+	
+	let deptListEl = document.getElementById('deptList');
+	
+	for (let idx in deptList) {
+		let option = document.createElement('option');
+		option.setAttribute('name',deptList[idx].name);	
+		if (deptList[idx].name=='IT') option.setAttribute('selected',"selected");
+		option.innerText=deptList[idx].text;
+		
+		deptListEl.appendChild(option);
+	}
 	
 	</script>	
 		
 	<h3>End of file</h3>
 	<script>
+		//case1
 		let h3arr = document.getElementsByTagName('h3');
-		h3arr[1].insertAdjacentHTML('beforebegin','<h3>Test html ads...</h3>')
+		h3arr[1].insertAdjacentHTML('beforebegin','<h3>Test html ads. v1...</h3>')
+		
+		//case2
+		let h31 = document.createElement('h3');
+		h31.innerHTML='Test html ads. v2..';
+		h3arr[1].parentElement.insertBefore(h31,h3arr[1]);
+		
 		
 	</script>	
 	</body>
