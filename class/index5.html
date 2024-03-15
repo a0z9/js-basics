@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS learn. Day5.</title>
+		<script src="js/utils.js"></script>
+	</head>
+	<body>
+	<h3>JS learn. Day5.</h3>	
+	
+	<div id="div0" unnn="123"> Upper div
+	<!-- TEST elements and nodes -->
+	<div> div1 </div>
+	<div name="data"> div2 </div>
+	<div name="data"> div22 </div>
+	<div> div23 </div>
+	<div id="div3"> div3 </div>
+	</div>
+	
+	
+	
+	<script>log('Day starts..');
+		let div0 =  document.getElementById('div0');
+		let div1 = div0.firstElementChild;
+		let div2 = div1.nextElementSibling;
+		let div3 = div0.lastElementChild;
+	
+		div3.innerHTML = '<p style="font-style:italic; font-weight:bold;">Обучение в БГУ</p>';
+	
+	
+	</script>	
+		
+	<h3>End of file</h3>
+	<script>
+		let h3arr = document.getElementsByTagName('h3');
+		h3arr[1].insertAdjacentHTML('beforebegin','<h3>Test html ads...</h3>')
+		
+	</script>	
+	</body>
+</html>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<project name="C:\Users\sand\Downloads\CodeLobster\g1\g1\g1.clpprj">
+<project name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\g1.clpprj">
  <settings>
   <PM_URL><![CDATA[http://localhost/g1/g1/]]></PM_URL>
   <PM_HOME_URL><![CDATA[http://localhost/g1/g1/]]></PM_HOME_URL>
@@ -12,16 +12,11 @@
  <removed value=";C:\Users\sand\Downloads\CodeLobster\g1\g1\js\NewFile0.html;"/>
  <added value=""/>
  <lastopfiles>
-  <file name="C:\Users\sand\Downloads\CodeLobster\g1\g1\index1.html"/>
-  <file name="C:\Users\sand\Downloads\CodeLobster\g1\g1\index2.html"/>
-  <file name="C:\Users\sand\Downloads\CodeLobster\g1\g1\js\cycles.js"/>
-  <file name="C:\Users\sand\Downloads\CodeLobster\g1\g1\js\funcs.js"/>
-  <file name="C:\Users\sand\Downloads\CodeLobster\g1\g1\js\NewFile0.html"/>
-  <file name="C:\Users\sand\Downloads\CodeLobster\g1\g1\index3.html"/>
-  <file name="C:\Users\sand\Downloads\CodeLobster\g1\g1\js\funcs2.js"/>
-  <file name="C:\Users\sand\Downloads\CodeLobster\g1\g1\js\utils.js"/>
-  <file name="C:\Users\sand\Downloads\CodeLobster\g1\g1\js\arrays.js"/>
-  <lastactivefile name="C:\Users\sand\Downloads\CodeLobster\g1\g1\js\funcs2.js"/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\objects.js"/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index4.html"/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\arrays.js"/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\utils.js"/>
+  <lastactivefile name=""/>
  </lastopfiles>
  <errors version="1.12.0"/>
  <cakedata/>
@@ -32,5 +27,5 @@
  <yiidata/>
  <todoblock/>
  <dbgurls/>
- <lasttime value="1710350295"/>
+ <lasttime value="1710481904"/>
 </project>
