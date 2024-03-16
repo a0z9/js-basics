@@ -7,9 +7,23 @@
 	</head>
 	<body>
 		<h3>JS Learn. Day6</h3>
+		<script>onload=()=>log('window loaded!');</script>
+		
+		<!-- Способ 1 -->
+		<button id="press1" onclick="log(`clicked 1! at ${new Date()}`)">Press me 1</button>
+		<button id="press2">Press me 2</button>
+		<button id="press3">Press me 3</button>
+		
+		
 		
 		<script>
-			log("js events");	
+			log("js events");
+			// Способ 2
+			document.getElementById("press2").onclick = ()=>{log(`clicked 2! at ${new Date()}`)};	
+			
+			//Способ 3
+			document.getElementById("press3").addEventListener('click',
+			()=>{log(`clicked 3! at ${new Date()}`)});
 			
 		</script>
 		<h3>end of doc</h3>
