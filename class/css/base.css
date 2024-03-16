@@ -2,9 +2,19 @@
 div {
 	margin: 5px;
 	padding: 5px;
+	border: solid green 1px;
+}
+
+#div1 {
+	border: solid green 1px;
 }
 
 .green {
+	background-color: green;
+}
 
-	background-color: green;	
+.large
+{
+   height: 10em;
+	width: 30em;
 }
