@@ -18,8 +18,8 @@
 		 <div id="div1">Outer container
 		 <div id="div2">Inner container</div>
 		</div>
-		
-		<input id="sname"/>
+		<br/>
+		<label for="login">Login:</label><input id="login" max="14" min="5"/>
 				
 		
 		<script>
@@ -41,10 +41,34 @@
 			div2.onmouseout = (e)=>{e.target.className="basic"};
 			div2.onmouseover = (e)=>e.target.className="red"; 
 			
-			var sname = document.getElementById("sname");
-			sname.addEventListener('keyup', 
+			var login = document.getElementById("login");
+			login.addEventListener('keyup', 
 			(e)=>e.target.value = e.target.value.toUpperCase());
 			
+			//var login = document.getElementById("login");
+			login.addEventListener('keydown',
+			(e)=>{ 
+			    //log(e);
+				if (!(/[a-zA-Z0-9_]/).test(e.key)) e.preventDefault();
+			 	});
+			
+			log('------------ ES6 ----------------');
+			var arr5 = [11,22,3,4,5,6];
+			for (let v of arr5)	log(v);
+				
+			var o5 = {'a':123,'b':456,'c':7,d:8};
+			let{a:v1,b:v12} = o5;
+			
+			let map1 = new Map();
+			map1.set("123",'test');
+			map1.set(123,'test');
+			let okey = {a:11};
+			map1.set(okey,'test3');
+			
+			
+			
+			
+					 
 			
 			
 			
