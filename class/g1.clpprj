@@ -16,9 +16,15 @@
   <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index4.html"/>
   <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\arrays.js"/>
   <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\utils.js"/>
-  <lastactivefile name=""/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index5.html"/>
+  <lastactivefile name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index5.html"/>
  </lastopfiles>
- <errors version="1.12.0"/>
+ <errors version="1.12.0">
+  <errfile name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index5.html">
+   <error val="15;10;26;10;2002;1;"/>
+   <error val="21;15;32;15;2002;1;"/>
+  </errfile>
+ </errors>
  <cakedata/>
  <dplmenupath/>
  <laravael/>
@@ -27,5 +33,5 @@
  <yiidata/>
  <todoblock/>
  <dbgurls/>
- <lasttime value="1710481904"/>
+ <lasttime value="1710514701"/>
 </project>
