@@ -15,7 +15,9 @@
 		<button id="press2">Press me 2</button>
 		<button id="press3">Press me 3</button>
 		
-		 <div id="div1">Data container</div>
+		 <div id="div1">Outer container
+		 <div id="div2">Inner container</div>
+		 </div>
 		
 		
 		
@@ -31,8 +33,8 @@
 			
 			//--------------
 			var div1 = document.getElementById('div1');
-			div1.onmouseout = ()=>log('exit div1!');
-			div1.onmouseover = ()=>log('enter div1!')
+			div1.onmouseout = (e)=>{log('exit div1!'); div1.className="basic";}
+			div1.onmouseover = (e)=>{log('enter div1!'); div1.className="green"; }
 			
 			
 			

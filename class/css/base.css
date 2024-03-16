@@ -7,7 +7,15 @@ div {
 
 #div1 {
 	border: solid green 1px;
+	height: 5em;
+	width: 20em;
 }
+
+#div2 {
+	border: solid red 1px;
+}
+
+.basic {}
 
 .green {
 	background-color: green;
