@@ -21,6 +21,10 @@ div {
 	background-color: green;
 }
 
+.red {
+	background-color: red;
+}
+
 .large
 {
    height: 10em;

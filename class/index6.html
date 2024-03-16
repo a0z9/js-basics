@@ -17,10 +17,10 @@
 		
 		 <div id="div1">Outer container
 		 <div id="div2">Inner container</div>
-		 </div>
+		</div>
 		
-		
-		
+		<input id="sname"/>
+				
 		
 		<script>
 			log("js events");
@@ -33,11 +33,23 @@
 			
 			//--------------
 			var div1 = document.getElementById('div1');
-			div1.onmouseout = (e)=>{log('exit div1!'); div1.className="basic";}
-			div1.onmouseover = (e)=>{log('enter div1!'); div1.className="green"; }
+			div1.onmouseout = (e)=>{ /*log('exit div1!');*/ div1.className="basic";}
+			div1.onmouseover = (e)=>{/*log('enter div1!');*/ div1.className="green"; }
+			//div1.onmousemove = (e)=>{log(e);};
+			
+			var div2 = document.getElementById('div2');
+			div2.onmouseout = (e)=>{e.target.className="basic"};
+			div2.onmouseover = (e)=>e.target.className="red"; 
+			
+			var sname = document.getElementById("sname");
+			sname.addEventListener('keyup', 
+			(e)=>e.target.value = e.target.value.toUpperCase());
 			
 			
 			
+			
+			
+						
 		</script>
 		<h3>end of doc</h3>
 	</body>
