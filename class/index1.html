@@ -2,67 +2,65 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>JS Learn. Day 1</title>
+		<title>JS Learn. Day1.</title>
 		<script src="js/utils.js"></script>
 	</head>
 	<body>
-		<h3>Js Learn. Day1.</h3>
-		
+		<h3>JS Learn. Day1.</h3>
 		<script>
+			var a = 123, b='Hello!'; //Global
+			let c = "Global c";
+			const DATA = 1;
 			
-		var	a1=123.11;
-		{
-		let b1 = 'Hello!', c1="Hi!";
-		var a1 = 456;
-		}
-		
-		let b1 = 'Salute!', c1="Howdoyoudo!";
-		b1=222;
-		
-		let d1;
-		
-		// int 
-		let i1 = 1, 
-		    i2 = 0b01011111, 
-		    i3 = 0o763567,
-			i4 = 0xf;
-		
-			let res = ++i1 + i4++;
-			// return ++i1
 			
-			i1++;
-			--i1;
+			{
+				var a = 456;
+				 /* DATA = 2; */
+				let c = "Local c";
+				console.log("c: " + c);
+			}
 			
-			let num1 = '111';
-			console.log(1+Number(num1)); //1
-			console.log(1+parseInt(num1,10)); //2
-			console.log(1+parseInt(num1,2)); //3
+			let greets = "Hello!"; // string
+			let counter = 0; //number
+			let res = true; //boolean
+			let o = {}; // Object
+			let f1 = function() { /*  */}; //Function
+			let arr = []; // Object
 			
-			//floats
-			let f1 = 123.456789012345678901;
-			log("fixed to 5:" + f1.toFixed(5));
+			// ints
+			// data - ..........
+			let data = ++counter - counter++;
+			--counter;
 			
-			var nan = 111/"aaa";
+			log("c: " + c);
+			
+			let i1=100,
+			    i2=0o177,
+			    i3=0x1ff,
+				i4=0b111;
+			
+			let age = "20";
+			log("Pass valid to: "+ (2 + parseInt(age)) ); // Number(age)	
+			
+			let double1 = 1.2345678;
+			log('double1= ' + double1.toFixed(5));
+			log('double1= ' + double1.toPrecision(6));
 			
 			//strings
-			let greets = "How do you do!";
-			const pattern1 = /how/ig;
-			log("pattern match: " + pattern1.test(greets));
+			greets += ",How do you do!";
+			log(greets);
+			log(greets.substring(greets.indexOf(",")+1,greets.length) );
 			
-			const tel = "+791044556789";
-			//+7(910)-44-44-567
-			//+791044-44567
-			const pattern2 = /^\+7\d{10}$/;
-			log("tel match: " + pattern2.test(tel));
+			const pattern = /Hello/;
+			log(pattern.test(greets));
 			
-			const pattern3 = /^\+7\(?\d{3}\)?-?\d{2}-?\d{2}-?\d{3}$/;			
-
-		
-		console.log('b1:'+b1);
-		console.log('c1:'+c1);
-					
+			let phone = "+7(123)--2*22-3 44 5";
+			const phonePattern = /^(\+7|8)\d{10}$/;
+			phone = phone.replace(/[- *()]/g,"");
+			log(phonePattern.test(phone)); 
+			
 			
 		</script>
-	
+		<h3>End of file...</h3>
 	</body>
 </html>
