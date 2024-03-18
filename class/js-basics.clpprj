@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<project name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\g1.clpprj">
+<project name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js-basics.clpprj">
  <settings>
   <PM_URL><![CDATA[http://localhost/C:/Users/sand/projects/Bratsk-Irkutsk-24/js-basics/class]]></PM_URL>
   <PM_HOME_URL><![CDATA[http://localhost/C:/Users/sand/projects/Bratsk-Irkutsk-24/js-basics/class]]></PM_HOME_URL>
@@ -24,5 +24,5 @@
  <yiidata/>
  <todoblock/>
  <dbgurls/>
- <lasttime value="1710738054"/>
+ <lasttime value="1710738366"/>
 </project>
