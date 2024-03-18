@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>JS Learn. Day 1</title>
+		<script src="js/utils.js"></script>
 	</head>
 	<body>
 		<h3>Js Learn. Day1.</h3>
@@ -19,6 +20,43 @@
 		b1=222;
 		
 		let d1;
+		
+		// int 
+		let i1 = 1, 
+		    i2 = 0b01011111, 
+		    i3 = 0o763567,
+			i4 = 0xf;
+		
+			let res = ++i1 + i4++;
+			// return ++i1
+			
+			i1++;
+			--i1;
+			
+			let num1 = '111';
+			console.log(1+Number(num1)); //1
+			console.log(1+parseInt(num1,10)); //2
+			console.log(1+parseInt(num1,2)); //3
+			
+			//floats
+			let f1 = 123.456789012345678901;
+			log("fixed to 5:" + f1.toFixed(5));
+			
+			var nan = 111/"aaa";
+			
+			//strings
+			let greets = "How do you do!";
+			const pattern1 = /how/ig;
+			log("pattern match: " + pattern1.test(greets));
+			
+			const tel = "+791044556789";
+			//+7(910)-44-44-567
+			//+791044-44567
+			const pattern2 = /^\+7\d{10}$/;
+			log("tel match: " + pattern2.test(tel));
+			
+			const pattern3 = /^\+7\(?\d{3}\)?-?\d{2}-?\d{2}-?\d{3}$/;			
+
 		
 		console.log('b1:'+b1);
 		console.log('c1:'+c1);
