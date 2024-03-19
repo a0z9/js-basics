@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js-basics.clpprj">
  <settings>
-  <PM_URL><![CDATA[http://localhost/C:/Users/sand/projects/Bratsk-Irkutsk-24/js-basics/class]]></PM_URL>
-  <PM_HOME_URL><![CDATA[http://localhost/C:/Users/sand/projects/Bratsk-Irkutsk-24/js-basics/class]]></PM_HOME_URL>
+  <PM_URL><![CDATA[http://localhost/class/]]></PM_URL>
+  <PM_HOME_URL><![CDATA[http://localhost/class/]]></PM_HOME_URL>
   <PM_LIBS><![CDATA[]]></PM_LIBS>
   <PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION>
   <PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR>
@@ -12,8 +12,12 @@
  <removed value=";"/>
  <added value=""/>
  <lastopfiles>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index1.js"/>
   <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index1.html"/>
-  <lastactivefile name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index1.html"/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\utils.js"/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index2.html"/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\arrays.js"/>
+  <lastactivefile name=""/>
  </lastopfiles>
  <errors version="1.12.0"/>
  <cakedata/>
@@ -24,5 +28,5 @@
  <yiidata/>
  <todoblock/>
  <dbgurls/>
- <lasttime value="1710738366"/>
+ <lasttime value="1710819200"/>
 </project>
