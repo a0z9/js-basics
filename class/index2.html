@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day2.</title>
+		<script src="js/utils.js"></script>
+		<script src="js/arrays.js"> </script>
+	</head>
+	<body>
+		<h3>JS Learn. Day2.</h3>
+		
+		<script>
+			let data = 20, age=23, answer='yes';
+        
+			if (data == '20' || age<=20 )
+				{log('Ok!!'); log('Ok 2!!');}
+			else
+				{log('False!'); log('False2!!'); } 
+			
+			//
+			
+			//if( age >=17 && age < 25)
+			if (17 <= age < 25) {
+				log('Junior!');
+				/*     */
+			}
+			else if (25 <= age < 45)
+				{
+					log('Middle!');
+				}
+			else
+				{
+					log('Other..');	
+				}	      			
+			
+			var res = (age<25)?'jun!':"middle";
+			log(res);
+			
+			// switch
+			// chem, phys, mech, it, ...
+			let dept = 'it';
+			
+			switch(dept)
+				{
+				case 'it':
+				log("choice it!");	
+				//...	
+				break;
+			    case 'phys':
+				log("physica choice!");
+				//...
+				break;
+			    case 'chem':
+				log("chemistry choice!");
+				//...
+				break;	
+				default:
+				log("unknown choice...");
+				break;
+					
+				}	
+				
+	// cycles
+	//for (var i=0,k=12; i<5; i++,k/=3)	log("i="+i);
+	const N = 5;
+	for (let i=0; i<N; i++)	log("i="+i);
+	log('='.repeat(45));	
+		
+	{
+		let i =0;
+		for (;;) {
+			if (i>=N) break;	
+			log("i="+i);
+			//.....	
+			i++;
+		}
+	}
+	log('-'.repeat(45));	
+	for (let i=0; i<N*2; i++) //1
+		{
+		  //..
+		  if (i%3!=0)  continue;	
+		  log("i="+i);
+		  //..
+		  //..
+		}
+	for (let i=0; i<N*2; i++) {//2
+		//..
+		if (i%3==0)
+			{
+		log("i="+i);
+		//..
+		//..
+		     }
+	}
+	
+	for (let i=0; i<N*2; i+=3)	log("i="+i); //3
+	
+	log('+'.repeat(45));
+	
+	const Ni=25, Nj=45;
+	
+	outer:
+	for (let i=0; i<Ni; i++ )
+		{
+		for (let j=0; j<Nj; j++ ){
+			if (i*j == j+i+5) {
+				log('match: ' + i + "," +j);
+				break outer;
+			}
+		}
+	}
+	
+	// while
+	log('-while'.repeat(5));
+	let k=-1;
+	while (++k<N) {
+		log("k="+k);
+		//k++; 
+	}
+
+	k=N;
+	while(1) {
+		if (k--==0)	break;
+		log("k="+k);
+	}
+	
+	//for (;k<N;)
+	
+	do {
+		log('test do-while');	
+		
+	} while(0);
+	log('--arrays'.repeat(7));
+	
+	// Обход массива (коллекции)
+	//1
+	for (let idx=0; idx<arr.length; idx++)	log('1:arr['+idx+']='+arr[idx]);
+	//2
+	for (let idx in arr) log('2:arr['+idx+']='+arr[idx]);
+	//3
+	for (let val of arr) log('3:arr[]='+val);
+	//4
+	arr.forEach( (v,idx)=> log('4:arr['+idx+']='+v) );		
+	
+			
+		</script>
+	</body>
+</html>
