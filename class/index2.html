@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS learn. Day2.</title>
+		<script src='js/utils.js'></script>
+	</head>
+	<body>
+		<h3>JS learn. Day2.</h3>
+		<script src="js/arrays.js"></script>
+		<script>
+			let name="Basil", age=23;
+			
+			if ( name=='Basil' && age=='23')
+				{log("Ok"); log("Ok2");}
+				else
+					{log("False"); log("False1");}
+			
+			
+					age = 80;
+					if (age>=17 && age<30) {
+						log("junes");
+					}
+					else if (age>=30 && age<45) {
+						log("middle");
+						/*
+						* 
+						*/
+					}
+					else if(age>=45 && age<60)
+						{
+							log("senior");
+						}
+					else {
+						log("other");
+			        }  
+			        
+			        // switch
+			        
+					const  answer = "no";
+					switch(answer){
+						case 'yes':
+						log('choice yes!');
+						//...
+						//...
+							break;
+						case 'no':
+							log('choice no!');
+							// ..
+							break;
+						case 'donotknow':
+							log('choice some else..');
+							// ..
+							break;	
+						default:
+						    //log('choice some else..');
+							break;
+					}
+			
+		// cycles
+		
+		for (let i=0, j=0; i<5; ++i) {log("i="+i);}
+		log('+'.repeat(33));	
+		{ // cycle block
+			let i=0;
+			for (;;) {
+				if (i>=5)break;
+				log("i="+i);
+				++i;
+			}
+		}
+		log('+'.repeat(33));
+		for (let i=0; i<15; ++i) {
+			//if(i%3==0) log("i="+i);
+			if (i%3!=0)	continue;
+				log("i="+i);
+			// ..
+			//...
+		}
+		
+		for (let i=0; i<15; i+=3)	log("i="+i);
+		
+		let Ni=15, Nj=30;
+		
+		outer: 
+		for (let j=0; j<Nj; j++) {
+			//..
+			for (let i=0; i<Ni; i++)
+				{
+					if (i*j == i+j+7) {
+						log("match: " + i +"," + j);
+						break outer;
+						}
+				}
+			//...
+			//..	
+		}
+		
+//  	mult();
+// Таблица умножения:	
+//		1 2 3 4 ..
+//	  1	1 2 3
+//	  2	2 4 6
+//    3			
+//	  .	
+//	  .		
+
+	log('-'.repeat(25));
+	
+	let k = 7;
+	while (k>0)	log("k=" + k--);
+	
+	while(1){if (k>7) break; log("k=" + k++);} // while(true)	
+	
+	do {
+		log("do-while: k=" + k++);
+	} while (k<5);
+	
+	// arrays
+	// 1
+	for (let i=0; i<arr.length; i++) log("arr[" + i+"]="+arr[i]);
+	// 2
+	for (let idx in arr) log("arr[" + idx +"]="+arr[idx]);
+	//3
+	for (let val of arr) log("arr[]="+val);
+	//4
+	arr.forEach( (v,i)=>log("ARR[" + i+"]="+v) );
+			
+	
+	
+	
+		</script>
+		
+		<h3>End of file</h3>
+	</body>
+</html>

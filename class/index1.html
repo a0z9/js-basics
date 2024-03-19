@@ -46,6 +46,11 @@
 			
 			//strings
 			let greets = "How do you do!";
+			
+			log("greets.length="+greets.length);
+			log(greets.substring(0,greets.length-3) );
+			
+			
 			const pattern1 = /how/ig;
 			log("pattern match: " + pattern1.test(greets));
 			
@@ -55,7 +60,12 @@
 			const pattern2 = /^\+7\d{10}$/;
 			log("tel match: " + pattern2.test(tel));
 			
-			const pattern3 = /^\+7\(?\d{3}\)?-?\d{2}-?\d{2}-?\d{3}$/;			
+			const pattern3 = /^(\+7|8)\(?\d{3}\)?-?\d{2}-?\d{2}-?\d{3}$/;
+			let tel2 = "+7 910**44--5-56-78-9";
+			log("tel2:"+tel2);
+			tel2=tel2.replace(/[-*\s]/g,"");
+			log("tel2:"+tel2);
+			log('-'.repeat(35));			
 
 		
 		console.log('b1:'+b1);
