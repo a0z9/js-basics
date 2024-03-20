@@ -16,5 +16,21 @@ function mult(){
 		log(s1);
 	}
 
-	
 }
+
+function Summa(){
+	//let s = (typeof arguments[0] == "string")?'':0;
+	let s = (typeof arguments[0] == "number")?0:'';
+	for (let val of arguments)	s+=val;
+	return s;
+}
+
+
+function Summa2(isNum=true,...arr)
+{
+	let s = isNum?0:'';
+	for (let val of arr) s+=val;
+	return s;
+}
+
+

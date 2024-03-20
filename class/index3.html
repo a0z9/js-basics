@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day 3.</title>
+		<script src="js/arrays.js"></script>
+		
+		<script src="js/utils.js"></script>
+		<script src="js/funcs.js"></script>
+	</head>
+	<body>
+	<h3>LS Learn. Day 3.</h3>
+	<script>
+		log("--start".repeat(7));
+		
+		function setA(){
+			var a="func";
+			c = "func"; // don't do it!'
+		}
+		
+		function setB()
+		{
+			var b="func";
+		}
+		
+		var a ="global";
+		let b ="global";
+		{
+			var a = "local";
+			let b ="local";
+			log(`a local: ${a}, b local: ${b}`);	
+		}
+		
+		
+		log(`a global: ${a}, b global: ${b}`);
+		
+		setA(); setB();
+		log(`a func: ${a}, b func: ${b}`);
+		
+	</script>
+		
+	</body>
+</html>
