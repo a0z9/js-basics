@@ -18,6 +18,36 @@
 			c2();c2();
 			log(`c1:${c1()}, c2:${c2()}`); //4, 13
 			
+			// self run functions
+			
+			//1
+			(function(){  
+			//..
+			var a= 111, b=22;
+			log('1:runF1');
+		     })();
+		     
+		     
+		     //2
+			 (function()
+			 {
+				 //..
+				 var a= 111, b=22;
+				 log('2:runF1');
+			 }());
+			
+			
+             //3
+             {
+				 //..
+				 let a= 111, b=22;
+				 log('3:runF1');
+             }  			
+			
+			//runF1();
+			
+			
+			
 			
 		</script>
 		<h3>End of file</h3>	

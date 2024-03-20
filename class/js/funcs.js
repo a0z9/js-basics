@@ -77,6 +77,35 @@ const Counter2 = function(counter = 0) {
 }
 
 const Counter = (c=0)=>()=>++c;
+
+
+const Counter3 = function(counter = 0) {
+
+	function increment()
+	{
+		return ++counter;
+	}
+	
+	function f2()
+	{
+		return counter;
+	}
+	
+	function decrement()
+	{
+		return --counter;
+	}
+	
+	function reset()
+	{
+		return counter=0;
+	}
+	
+	return [f2,increment,decrement,reset];  // f1() - not works!!
+}
+
+
+
  
 
 
