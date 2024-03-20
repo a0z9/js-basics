@@ -28,13 +28,37 @@ function sayGreets4()
 
 //Замыкания
 
-const Counter = function(){
+const Counter2 = function(){
 	var counter = 0;
 	//....
 	const f1 = function() {return ++counter;};
 	const f2 = function() {return counter;};
 	return [f1,f2];
 }
+
+const Counter = (c=0)=>()=>++c;
+
+const globalCounter =( (c=0)=>()=>++c )();
+
+const globalCounter2 = (function() {
+	var counter = 0;
+	//....
+	const f1 = function() {return ++counter;};
+	const f2 = function() {return counter;};
+	return [f1,f2];
+})();
+
+
+// function pass as arg
+
+const Move = function(m,x,y){
+	m(x,y); m(x+3,y);
+}
+
+const m1 = (x,y)=>log(`monster moves to point: (${x},${y}) `);
+const m2 = (x,y)=>log(`player moves to point: (${x},${y}) `);
+
+
 
 
 

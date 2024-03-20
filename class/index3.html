@@ -37,6 +37,42 @@
 		setA(); setB();
 		log(`a func: ${a}, b func: ${b}`);
 		
+		
+		let initConnection = function() {
+			//..
+			//..
+			log('connected!');
+		};
+		
+		initConnection();
+		
+	// self call functions	
+		(function() {
+			//..
+			//..
+			var port = 3389;
+			log(`connected on tcp:${port} v.2!`);
+		})();
+		
+		(function() {
+			//..
+			//..
+			var port = 1458;
+			log(`connected on tcp:${port} v.3!`);
+		}());
+		
+	// array sort funcs
+	
+	var arr1 = [-1,2,3,-44,4,100,-45];	
+	log(arr1.sort());
+	log(arr1.sort((a,b) => Number(a) - Number(b)));
+	log(arr1.sort((a,b) => Number(b) - Number(a)));
+	var mySort2 = (a,b) => Math.abs( Number(a)) - Math.abs(Number(b)); 
+	log(arr1.sort(mySort2));
+	
+		
+		
+		
 	</script>
 		
 	</body>
