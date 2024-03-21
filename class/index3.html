@@ -46,7 +46,21 @@
 			
 			//runF1();
 			
+			function sortFunc(x, y)
+			{
+				return Number(y)-Number(x);
+			}
 			
+			function sortNumbersByModule(x, y)
+			{
+				return Math.abs(Number(x))- Math.abs(Number(y));
+			}
+			
+			let arrUnsorted = [-12,23,-44,77,-1,-3,41,100,-10,0,1.22];
+			log(arrUnsorted.sort());
+			log(arrUnsorted.sort( (a,b)=>Number(a)-Number(b) ));
+			log(arrUnsorted.sort(sortFunc));
+			log(arrUnsorted.sort(sortNumbersByModule));
 			
 			
 		</script>
