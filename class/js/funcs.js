@@ -59,6 +59,30 @@ const m1 = (x,y)=>log(`monster moves to point: (${x},${y}) `);
 const m2 = (x,y)=>log(`player moves to point: (${x},${y}) `);
 
 
+// Objects
+
+const Counter3 = (c=0)=> {
+	return{
+	increment: ()=>++c,
+	decrement: ()=>--c,
+	reset:     ()=>c=0,
+	get value(){return c;}	
+	};
+};
+
+
+const C = ((c=0)=> {
+	//...
+	//...
+	return{
+		increment: ()=>++c,
+		decrement: ()=>--c,
+		reset:     ()=>c=0,
+		get value(){return c;}
+	};
+})();
+
+
 
 
 

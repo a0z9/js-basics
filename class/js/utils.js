@@ -1,6 +1,8 @@
 
 const log = console.log;
 
+const echo = (s='-',N=35)=>log(s.repeat(N));
+
 function mult(){
 	
 	const Ni=11; Nj=11;
