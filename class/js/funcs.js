@@ -106,7 +106,34 @@ const Counter3 = function(counter = 0) {
 
 
 
- 
+ const Counter4 = (c=0) => {
+ 	//...
+ 	//..
+    return {
+    reset: ()=>c=0,
+    increment: ()=>++c,
+    decrement: ()=>--c,
+    get value(){return c;}
+   	};
+}
+
+
+const Count = (
+(c=0) => {
+	//...
+	//..
+	return {
+		reset: ()=>c=0,
+		increment: ()=>++c,
+		decrement: ()=>--c,
+		get value(){return c;}
+	};
+}
+)();
+	
+
+
+
 
 
 
