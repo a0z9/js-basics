@@ -35,7 +35,7 @@ log(o3);log(o1);
 //1
 let o4 = JSON.parse(JSON.stringify(o1)); 
 //2
-let o5 = structuredClone(o1)''
+let o5 = structuredClone(o1);
 
 
 let student = {id:111, name:"Peter", age:25};
