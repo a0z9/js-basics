@@ -104,7 +104,7 @@ const Counter3 = function(counter = 0) {
 	return [f2,increment,decrement,reset];  // f1() - not works!!
 }
 
-
+// Objects
 
  const Counter4 = (c=0) => {
  	//...
