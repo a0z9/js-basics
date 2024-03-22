@@ -65,6 +65,9 @@ let st2 = new Student(2,"Kate");
 
 class Base{
 	#id;
+	//static UNIVER = 'IGNTU';
+	static get UNIVER(){return 'IGNTU';}
+	
 	
 	constructor(id,name,age)
 	{
@@ -86,6 +89,7 @@ class Base{
 	
 }
 
+Base.DATA = 'Learn JS';
 
 class Stud extends Base
 {

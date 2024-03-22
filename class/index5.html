@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day5.</title>
+		<link href="css/base.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<h3>JS Learn. Day5.</h3>
+		<div id="div1">
+			
+			<!-- JS LEARN test div... -->
+			<div id="div2" name="inner" class="green test-11-22" visible> div2 </div>  
+			<div id="div3" name="inner"> JS LEARN </div>  
+			<div id="div4" data-frame="bla-bla-bla"></div>
+			<span id="span1" class="green">span text</span> 
+			
+		</div>
+		<input id = "login" /> <label for="login">Name </label><br/>
+		<input id = "pass" type="password" /> <label for="pass">Pass </label><br/>
+		
+		<select id="selec1">
+			<option name="d1">data 1</option>
+			<option name="d2">data data</option>
+			<option name="d3">data 3</option>
+			
+		</select>
+		
+		
+		<select id="instituteList"></select>
+		
+		
+		<h3>End of doc</h3>
+		
+		<script>
+			let div2 = document.getElementById("div2");
+			div2.innerHTML = "Inserted text!";
+			
+			let div3 = document.querySelector('#div3');
+			div3.innerText += ", IGNTU.";
+			
+			let divs = document.getElementsByTagName('div');
+			for (let idx =0; idx<divs.length; idx++)
+				divs[idx].setAttribute('style',
+			                           `border:${2-idx/2}px solid; margin: 2px; padding: 2px;`)
+			
+			let names = document.getElementsByName('inner');
+			
+			let classes = document.getElementsByClassName('green');
+			
+			document.getElementById('div1').firstElementChild.
+			nextElementSibling.nextElementSibling.nextElementSibling.innerText = "Span"; 
+			
+			
+			let h3 = document.createElement('h3');
+			h3.innerText = "---- LEARN JS! -----";
+			
+			//1
+			let h3Last = document.lastElementChild.lastElementChild.lastElementChild;
+			h3Last.parentElement.insertBefore(h3,h3Last);
+			
+			//2
+			h3.insertAdjacentHTML('beforeBegin','<h3>h3Last.insertAdjacentHTML</h3>');
+			
+			
+			// selector
+			let instututes = [
+			{name:mech, text: 'Механика'},
+			{name:electro, text: 'Электротехника'},
+			{name:phys, text: 'Физика'},
+			{name:it, text: 'ИТ'}];
+			
+			
+			
+			
+		</script>
+		
+	</body>
+</html>
