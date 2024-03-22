@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day 5.</title>
+		<script src="js/utils.js"></script>
+		<link href="css/base.css" rel="stylesheet"/>
+	</head>
+	<body>
+	   
+		<h3 id ="toph3">JS Learn. Day 5.</h3>
+		
+		<div id="div0">
+		Day 5 learn!!
+		<!--div test -->
+		 <div id="inner1" data-value="1232"> data code  
+		 <span class="special">University style...</span>
+		 </div>
+		 <div id="inner2" name="data"> data code </div>
+		 <div id="inner3" name="data" data-value="4477"></div>
+		 <span> text node </span> <br/>
+		 <p class="special solid-all bla-bla"> Par node </p>
+		</div>
+		
+		<fieldset style="width: 20em"> 
+		<legend>login/pass form</legend>
+		<input id="login"/><label for="login">Login</label><br />
+		<input id="pass" type="password"/>	<label for="pass">Pass</label><br />
+		</fieldset>
+		<br/>
+		
+		<select>
+			<option name="op1">data1</option>
+			<option name="op2">data2</option>
+			<option name="op3">data3</option>
+			
+		</select>
+		<br/>
+		
+		<select id="skins"></select>
+		
+		
+		
+		
+		
+		<vidget src="www">VVVV</vidget>
+		
+		<!-- Day 5 learn!! -->
+	
+		<h3 id="bottomh3">End of file</h3>
+		
+		<script> 
+			let div0 = document.getElementById('div0');
+			let inner1 = document.getElementById('inner1')
+			let inner3 = document.getElementById('inner3')
+			inner3.innerHTML = '<p>data: new wave!</p>';
+			
+			let divs = document.getElementsByTagName('div');
+			//for (let div of divs)
+			for (let idx=0; idx<divs.length; idx++) {
+			//	log(divs[idx]);				
+			divs[idx].setAttribute("style",
+			`border: 1px solid; padding: 2px; margin: ${5-idx}px;`);
+			}
+			
+			let names = document.getElementsByName('data');
+			//names = [...names];
+			[...names].forEach( (v,idx,a)=>a[idx].setAttribute("style",'background-color: lightgreen;') );
+		
+			let classes = document.getElementsByClassName('special');
+			for (let idx=0; idx<classes.length; idx++) {
+				classes[idx].setAttribute("style",
+				`font: bold 18px courier;`);
+			}
+		
+			let dataEl = document.querySelector('div[data-value]');
+			
+			// add h3
+			
+			var h3 = document.createElement('h3');
+			h3.innerText = '...menu stub..';
+			document.body.appendChild(h3);
+						
+			h3 = h3.cloneNode(true);
+			var toph3 = document.getElementById('toph3');
+			document.body.insertBefore(h3,toph3);
+			 
+			// beforeBegin, afterBegin
+			// beforeEnd, afterEnd
+			let par =  document.createElement('p');
+			par.innerText = "inserted par";
+			par.setAttribute("style","color:red;"); 
+			
+			inner1.insertAdjacentElement('afterEnd',par) 
+			
+			//inputs
+			let login = document.getElementById('login');
+			login.value = 'BASIL2378';
+			
+			//Selection
+			let skins = document.getElementById('skins');
+			
+			let sks= [
+			{name:'dark', text:"Dark"},
+			{name:'light', text:"Light"},
+			{name:'maroon', text:"Maroon"},
+			{name:'pers', text:"Персональная тема"}
+			];
+		
+		    for(let skin of sks)
+		    	{
+					var option = document.createElement('option');
+					option.setAttribute('name',skin.name);
+					option.innerText = skin.text;
+					if (skin.name=='light')
+						option.setAttribute('selected','selected');
+					skins.appendChild(option);
+		    	}
+		
+		</script>
+	</body>
+</html>
