@@ -19,13 +19,24 @@
 		<input id = "login" /> <label for="login">Name </label><br/>
 		<input id = "pass" type="password" /> <label for="pass">Pass </label><br/>
 		
-		<select id="selec1">
+		<select id="selec1" >
 			<option name="d1">data 1</option>
 			<option name="d2">data data</option>
 			<option name="d3">data 3</option>
 			
-		</select>
+		</select> <br/>
 		
+		
+		<fieldset style="width: 10em;">	<legend>Choice vars</legend>
+			<input type="radio" name="gen" id="rb1" value="radio 1"/> <label for="rb1">MECH</label><br/>
+			<input type="radio" name="gen" id="rb2" value="radio 2"/>
+			<label for="rb2">ASTRO</label><br/>
+			<input type="radio" name="gen" id="rb3" value="radio 3"/>
+			<label for="rb3">MATH</label><br/>
+        </fieldset> 
+		
+		
+		<fieldset style="width: 10em;" id="pays"></fieldset> 
 		
 		<select id="instituteList"></select>
 		
@@ -64,13 +75,61 @@
 			
 			
 			// selector
-			let instututes = [
-			{name:mech, text: 'Механика'},
-			{name:electro, text: 'Электротехника'},
-			{name:phys, text: 'Физика'},
-			{name:it, text: 'ИТ'}];
+			let institutes = [
+			{name:'mech', text: 'Механика'},
+			{name:'electro', text: 'Электротехника'},
+			{name:'phys', text: 'Физика'},
+			{name:'IT', text: 'ИТ'}];
 			
+			let instituteList = document.getElementById('instituteList');
 			
+			let option;
+			for(let inst of institutes)
+				{
+					option = document.createElement('option');
+					option.setAttribute('name',inst.name);
+					if (inst.name.toLowerCase()=='it') option.setAttribute("selected","selected");
+					option.innerHTML = inst.text;
+					instituteList.appendChild(option);
+				}
+			delete option;
+			
+			// radio
+			let pays = [
+				{name:'card', text: 'Картой'},
+				{name:'qr', text: 'QR код'},
+				{name:'tel', text: 'Телефон'},
+				{name:'bank', text: 'Банковский перевод'}];
+			
+				// type="radio" name="gen" id="rb1" value="radio 1"
+				// <label for="rb1">MECH</label><br/>
+			
+				let payments = document.getElementById("pays");
+				let legend = document.createElement("legend");
+				legend.innerHTML = 'Метод оплаты';
+				payments.appendChild(legend); 
+				
+			
+				for (let pay of pays) {
+					var input = document.createElement('input');
+					input.setAttribute('type','radio');
+					input.setAttribute('name','payment');
+					input.setAttribute('id',pay.name);
+					input.setAttribute('value',pay.name);
+					
+					var label = document.createElement('label');
+					label.setAttribute('for',pay.name);
+					label.innerHTML=pay.text;
+					
+					var br = document.createElement('br');
+					
+					payments.appendChild(input);
+					payments.appendChild(label);
+					payments.appendChild(br);
+					
+					
+					
+				}
 			
 			
 		</script>
