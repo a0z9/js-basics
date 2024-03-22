@@ -12,17 +12,16 @@
  <removed value=";"/>
  <added value=""/>
  <lastopfiles>
-  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index1.html"/>
-  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\utils.js"/>
-  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index2.html"/>
-  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\arrays.js"/>
-  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index3.html"/>
-  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\funcs.js"/>
-  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index4.html"/>
   <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\js\objects.js"/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index5.html"/>
+  <file name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\css\base.css"/>
   <lastactivefile name=""/>
  </lastopfiles>
- <errors version="1.12.0"/>
+ <errors version="1.12.0">
+  <errfile name="C:\Users\sand\projects\Bratsk-Irkutsk-24\js-basics\class\index5.html">
+   <error val="55;12;63;12;2002;1;"/>
+  </errfile>
+ </errors>
  <cakedata/>
  <dplmenupath/>
  <laravael/>
@@ -31,5 +30,5 @@
  <yiidata/>
  <todoblock/>
  <dbgurls/>
- <lasttime value="1711067013"/>
+ <lasttime value="1711079139"/>
 </project>
