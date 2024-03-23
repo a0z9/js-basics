@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day6.</title>
+		<script src="js/utils.js"></script>
+		<link href="css/base.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<h3>JS Learn. Day6.</h3>
+		<!-- case 1 -->
+		<div id="div1">
+		<button id="btn1" onclick="log('++clicked btn 1' + new Date())">Press 1</button>
+		<button id="btn2">Press 2</button>
+		<button id="btn3">Press 3</button>
+		</div>
+		<div id="div2">	</div>
+			
+			
+		<div id="base"> </div>
+		<input id="name"/>  <label for="name">Имя</label><br/>
+		<input id="sname"/>	<label for="sname">Фамилия</label><br/>		
+			
+		<script>
+			let div2 = document.getElementById('div2');
+			let btn2 = document.getElementById('btn2');
+			
+		// case 2	
+			btn2.onclick = (e)=>{log('++clicked btn 2' + new Date()); log(e);
+			div2.innerHTML +=`<span>${new Date()}</span><br/>`;	 }; 	
+		
+		// case 3
+		let btn3 = document.getElementById('btn3');
+		
+		const handler3 = (e)=>{ log('++clicked btn 3' + new Date()); log(e); };
+		const handler3_2 = (e)=>{ log('++clicked btn 3 extra!' + new Date()); log(e); };
+		
+		btn3.addEventListener('click', handler3);
+		btn3.addEventListener('click', handler3_2);
+		
+		//btn3.removeEventListener()
+		
+		let div1 = document.getElementById('div1');
+		div1.onclick = (e)=>{ log('++ DIV clicked'); log(e); }
+		
+		let base = document.getElementById('base');
+		base.onmouseover = (e)=>e.target.className = 'green';
+		base.onmouseout = (e)=>e.target.className = 'base';
+		base.onmousemove =(e)=>{
+			base.innerText = `X=${e.x}, Y=${e.y}`;
+			//log(e);  	
+			
+		};
+		
+		//input
+		const keyCheck = (e)=>{
+			//	if ('0123456789'.indexOf(e.key)!=-1) e.preventDefault();
+			if ( !(/[а-яА-Я]/).test(e.key) && (e.keyCode!=8))
+				e.preventDefault();
+			//	log(e);
+		};
+		const keysToUpper = (e)=>{ log(e); e.target.value = e.target.value.toUpperCase(); };
+		}
+		
+		let sname =  document.getElementById('sname');
+		sname.addEventListener('keyup', keysToUpper);	sname.addEventListener('keydown', keyCheck);
+		
+		let name =  document.getElementById('name');
+		name.addEventListener('keyup', keysToUpper);	name.addEventListener('keydown', keyCheck);
+		
+			
+		</script>
+	</body>
+</html>
