@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day 1.</title>
+		<script src="js/utils.js"></script>
+	</head>
+	<body>
+		<h3>JS Learn. Day 1.</h3>
+		
+		
+		<script>
+			"use strict";
+			console.log('Day1 js learning');
+			var var1 = "test var";
+			var var2 = "var2";
+			var var2 = "var2 v.2";
+			console.log('var1:'+var1);
+		</script>
+		
+		
+		<script>
+			console.log('start script block 2,', 'var2:'+var2);
+			let var3 = "var3";
+			//let var3 = "var3-v.2"; // SyntaxError: redeclaration of let var3
+			var3 = 1223;
+			
+			const id = 12345;
+			//id=222; // TypeError: invalid assignment to const 'id'
+			
+			console.log('end script block 2,', 'var2:'+var2);
+		</script>
+		
+		<script>
+		"use strict";
+		console.log('start script block 3', 'id:'+id);
+		
+		var var4 = "global";
+		let let4 = "global";
+		
+		{
+			var var4 = "internal";
+			let let4 = "internal";
+			console.log("var4=" + var4 + ", let4=" + let4);
+		}
+		console.log("var4=" + var4 + ", let4=" + let4);
+		
+		//vars
+		let idx10=100, idx16=0xaff, idx8=0o777, idx2=0b101010111;
+		
+		let res = idx10++ - ++idx10;
+		++idx10;
+		idx16--;
+		--idx16;
+		
+		console.log( 0b11110111 & (1<<6) );
+		console.log( 0b11110111 | 0b00110111 );
+		
+		let key = 0b11010111;
+		console.log( 0b11110111 ^ key, 0b11110111 ^ key ^ key );
+		console.log( ~0b11110111 );
+		
+		console.log('-+-'.repeat(12));
+		
+		let longData = 1.2345678901234567890;
+		console.log(longData);
+		console.log(longData.toFixed(2));
+		
+		// strings
+		
+		let power = 0.25;
+		const add = '1';
+		
+		let sentToSrv = (power*100 + Number.parseFloat(add))/100;
+		console.log("power:" + sentToSrv);
+		
+		let greets1 = "  How do you do!!!		";
+		log(greets1);
+		log('length:' + greets1.length); 
+		log('idx:' + greets1.indexOf('you')); 
+		
+		let pattern = /\s+you\s+/;
+		log(pattern.test(greets1));
+		
+		
+		
+		</script>
+		
+		
+		<h3>End of doc..</h3>
+	</body>
+</html>
