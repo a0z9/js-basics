@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day1.</title>
+		<script src="js/utils.js"></script>
+	</head>
+	<body>
+		<script>
+
+
+		</script>
+		<h3> JS Learn. Day1. </h3>
+		
+		<script>
+		//1
+		var0 = 10; // wrong!
+		var var1;	
+		var var2 = 123.123, var3='variable 2', var4="var 4";
+		console.log("var2=" + var2);
+		var var2 = "abcde";
+		console.log("var2=" + var2);
+		
+		//2
+		let name = "Andrei";
+		///
+				
+		//let name =12313; // SyntaxError: redeclaration of let name
+		
+		//3
+		const id=126816387;
+		
+		//id=1238; //TypeError: invalid assignment to const 'id'
+		console.log("id=" + id);
+			
+		</script>
+		
+		
+		<script>
+			log("block 2 start");
+			log("id=" + id); //ReferenceError: id is not defined
+			
+			log("block 2 end");
+		</script>
+		
+		<script>
+			let data1 = 10, data2=0xaff, data3=0o777, data4=0b111101;
+			
+			++data1;
+			data1++;
+			
+			let result = data1 - ++data1;
+			--result;
+			
+		// strings
+		
+		let fromInput = 'a1.233';
+		
+		//1
+		result = 10 + Number(fromInput); 
+		
+		//2 
+		result = 20 +parseFloat(fromInput);
+		
+		log(result);
+		
+		let greets = "How do   you	 do!";
+		let login = " NorMa11";
+		let phone = "+7(910)-12 34*5**6 7";
+		
+		// RegExp
+		
+		const pattern =/\s+you\s+/;
+		log(pattern.test(greets));
+		// dry
+		log("phone: "+phone);
+		phone = phone.replace(/[-*\s()]/g,'');
+		log("phone: "+phone);
+		
+		const phonePattern =/^(\+7|8)\d{10}$/;
+		log("match: "+ phonePattern.test(phone));	
+			
+						
+		</script>
+		
+		
+		<h3> End of doc...</h3>	
+	</body>
+</html>
