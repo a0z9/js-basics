@@ -4,10 +4,15 @@
 	
 }
 
+.widget
+{
+	width: 10em;
+/*	height:  4em;*/
+}
+
 input, button, div{
 	padding: 2px;
 	margin: 3px;
-	
 }
 
 div {
@@ -19,10 +24,37 @@ div {
 #base {
 	width: 280px;
 	height:  100px;
-	
 }
 
-.basic {
-	
+/*div#time.counter {text-align: center;} */
+
+ol.counter{
+	margin: 0px;
+	margin-left: 3px;
+	padding: 0px;
+	counter-reset: c;
+	list-style: none;
 }
+
+ol.counter li {
+	counter-increment: c;
+	margin-right: 3px;
+}
+
+ol.counter li:nth-child(even)::before, ol.counter li:nth-child(even){
+	background-color: #efefef;
+}
+
+
+ol.counter li::before {
+	content: counter(c) ". ";
+	text-align: right;
+	display: inline-block;
+	width: 25px;
+	left: 0;
+	padding-right: 10px;
+}
+
+
+.basic {}
 

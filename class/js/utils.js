@@ -36,3 +36,29 @@ function Summa2(isNum=true,...arr)
 }
 
 
+function ms2HMS(ms,isDay=false){
+	
+	const toLeadZero=(n)=>(n<10)?'0'+n:''+n;
+	const milliseconds = ms%1000;
+	const all_seconds = Math.floor(ms/1000);
+	let seconds = all_seconds%60;
+	let minutes = Math.floor(all_seconds/60)%60; 
+	let hours =   Math.floor(all_seconds/3600)%24;
+
+	
+	seconds = toLeadZero(seconds);
+	minutes = toLeadZero(minutes);
+	hours =   toLeadZero(hours);
+	
+	const hms=`${hours}:${minutes}:${seconds}.${milliseconds}`;
+	
+	if (isDay) {
+		let days =   Math.floor(all_seconds/3600/24);
+		var d = (days==1)?'day':'days';
+		return `${d}: ${days}, ${hms}`; }
+	
+	return `${hms}`; 
+	}
+
+
+

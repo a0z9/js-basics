@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Секундомер</title>
+		<script src="js/utils.js"> </script>
+		<link href="css/base.css" rel="stylesheet"/>
+	</head>
+	<body>
+	
+	<div class="widget">
+	<div id="time" class="counter"></div>
+	<button id="start">Start</button>
+	<button id="finish">Finish</button>
+	<div><ol id="results" class="counter"></ol></div>
+	</div>	
+		
+		
+	<script>
+		const time = document.getElementById('time');
+		const start = document.getElementById('start');
+		const finish = document.getElementById('finish');
+		const results = document.getElementById('results');
+		
+		const timeout = 20;
+		let currentTime=0;
+		let timeCounter=null;
+		
+		
+		start.onclick = (e)=>{
+		 if (!timeCounter) {
+		 currentTime=0;
+		 [...results.children].forEach( v=>v.remove() );
+		 var curDate = new Date();	
+		 timeCounter = setInterval(
+		()=>{
+			currentTime = (new Date())-curDate;
+			time.innerText =  ms2HMS(currentTime);
+				
+		}, timeout);
+		e.target.innerText = 'Stop'; }
+		else {
+			clearInterval(timeCounter); e.target.innerText = 'Start'; timeCounter=null;
+		}
+	     
+	     
+		finish.onclick = (e)=>{
+			if(currentTime !=0)
+				{
+					const li = document.createElement('li');
+					li.innerText =  ms2HMS(currentTime);
+					results.appendChild(li);
+				}
+		};
+	};
+		
+	</script>	
+	</body>
+</html>
