@@ -82,6 +82,15 @@
 		let pattern = /\s+you\s+/;
 		log(pattern.test(greets1));
 		
+		let phone = "+7(908) 1-45-3**33-5";
+		log(phone)
+		log(phone.replace(/-|\*|\(|\)|\s/g,''));
+		log(phone.replace(/[\s*()-]/g,''));
+		
+		phone = phone.replace(/[\s*()-]/g,'');
+		
+		log(/^(\+7|8)\d{10}$/.test(phone)  );
+		//phone.replace(//,'');
 		
 		
 		</script>
