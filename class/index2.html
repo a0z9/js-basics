@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>JS Learn. Day 2.</title>
 		<script src="js/utils.js"></script>
+		<script src="js/arrays.js"></script>
 	</head>
 	<body>
 		<h3>JS Learn. Day 2.</h3>
@@ -95,6 +96,120 @@
 		let clusterTime = 
 		(dept.toLowerCase().trim() == 'it')?baseTime*1.1:baseTime;	
 		log("rent:" + clusterTime.toFixed(2));		
+			
+		// cycles
+		// 1
+		let N = 5;
+		for (let i=0,j=0; i<N; i++, j-=3)
+			{
+				log('i=' + i + ', j='+ j);
+			}
+		
+			log('-'.repeat(33));
+		// 2 - аналог 1
+		{
+		let i =0, j=0;
+		for (;;) {
+			if (i>=5) break;	
+			log('i=' + i + ', j='+ j);
+			++i; 
+			j-=3;	
+			}
+		}
+		
+		let i = 0;
+		for (;i<N;log("i="+ i++));
+			
+		let Nj=25, Nk=19;
+		
+		ext: 
+		for (let j=0; j<Nj; j++)
+			{
+				//....
+				for (let k=0; k<Nk; k++)
+					{
+						if (k*3 + 2  ==  j*k/4) {
+							log("match!! j=" + j + ", k=" + k);
+							break ext;
+						}
+					}
+			}
+		
+		log('-while-'.repeat(5));
+		//1
+		i=2;
+		while (i>-2) {
+			log("i="+i);
+			--i;
+		}
+		//2
+		for (i=2;i>-2;i--) log("i="+i);
+		
+		// while( data = getData()){}
+		
+		do {
+			log("[do-while]i="+i);
+		} 
+		while (i>1);
+			
+		
+		//     1  2  3 .. 10
+		//  1  1  2  3
+		//  2  2  4  6
+		//  .. 
+		// 10
+		
+		Nj=10, Nk=10;
+		
+		var s ='';
+		for (let j=1; j<=Nj; j++)	s+='\t'+j;
+		log(s);	   
+		for (let k=1; k<=Nk; k++)
+			{
+				s=k;
+				for (let j=1; j<=Nj; j++)
+					{
+						s+='\t' + j*k;
+					}
+				log(s);	
+			}
+		
+		//1
+		for (let k=1; k<=Nk; k++)
+			{
+				if (k%3) continue;
+				log("test k:" + k);
+				//...
+				//...
+			}
+		
+		//2
+		for (let k=1; k<=Nk; k++) {
+			if (!(k%3))	log("test k:" + k);
+			//...
+			//...
+		}
+		
+		//3
+		for (let k=3; k<=Nk; k+=3) {
+			log("test k:" + k);
+			//...
+			//...
+		}
+
+		//arrays
+		log('-arrays-'.repeat(5));
+		log(arr);
+		log(''+arr);
+		log('last:' +arr[arr.length-1]);
+		
+		arr = ["a",'b',11,22,33];
+				
+		for (let idx = 0; idx < arr.length; idx++)	log("arr[" + idx +"]="+arr[idx]);
+		log('+in+'.repeat(5));
+		for (let idx in arr) log("arr[" + idx +"]="+arr[idx]);
+		log('+of+'.repeat(5));
+		for (let value of arr)	log("arr[]="+value);
 			
 		</script>
 		
