@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day 2.</title>
+		<script src="js/utils.js"></script>
+	</head>
+	<body>
+		<h3>JS Learn. Day 2.</h3>
+		<script>
+			log("--if/else/switch/cycles --".repeat(3));
+		    
+			let age = 21;
+			if (age === 21)	{
+				log('True 1!!!'); log('True 2!!!');
+			}
+			else {log("False 1!!!");
+			log("False 2!!!");
+			//...
+			}
+		
+			var a1=11;
+			if (a1=15)	log('+++'); else log('---');
+		
+			var b;
+			//b = b || 'b value 1'; 
+			// b = b || 'b value 2'; 
+			b = b || '1'; 
+			
+			if (
+			    b===undefined ||
+			    b===0    ||
+				b===''   ||
+				b===null 
+				) {
+					b='b value 3';	
+				log("true, b=" + b);
+			}
+			/*
+			else
+				{
+					log("false, b=" + b);	
+				}
+		    */	
+		
+			const temp = 15;
+			const T_NORM=45, T_WARN=80, T_EXTREEME=120;
+			
+			if (temp < T_NORM) {
+				log("Normal temp: " + temp);
+				//
+			}
+			else if (temp >= T_NORM && temp < T_WARN) {
+				log("Warning temp: " + temp);
+				//
+			}
+			else if (temp >= T_WARN && temp < T_EXTREEME){
+				log("!!Extreem HIGH temp: " + temp);
+				//
+			}
+			else {
+				log("Personell evac!!! T= " + temp);
+			}
+		
+		
+		  // switch/case
+		  
+		  let dept = "mech";
+		  
+		  switch(dept.toLowerCase().trim()){
+		  	case 'it':
+		  	//...
+			  log("Dept IT" );
+		  	//..
+			break;
+		    case 'mech': log("Dept Mech" );	break;
+		    case 'electro': log("Dept Electronics" );	break;
+		    default: log("General page..." );
+		  }
+		
+		  // tern/if
+		  
+		  let isFridgeOn = false;
+		  let openPercent = isFridgeOn?10:50;
+		  
+		  let openPercent2;
+		  if (isFridgeOn)  openPercent2 = 10;
+		  else openPercen2=50;
+		  //var i =0;	
+		  // cycles
+		  
+		  // let i = 0;
+		  // 1
+		  for ( let i =0; i<4; i++) { 
+		  	log("i="+ i);
+		  	}
+		  
+		  // 2
+		  
+		  {
+			  let i = 0;
+			  for (;;) {
+				  if (i>=4)  break;
+				  log("i="+ i);
+				  //..
+				  ++i;
+			  }
+		  } 
+		  log('+'.repeat(33));
+		  for ( let i =0, j=10; i<4; i++,j-=3) {
+			  log("i="+ i + ", j=" + j);
+		  }
+		
+		  //continue
+		  //1
+		  for ( let i =0; i<24; i++) {
+			  if (i%7) continue; 
+			  log("(i%7=0)i="+ i);
+			  //..
+			  //..
+		  }
+		  
+		  //2
+		  for ( let i =0; i<24; i++) {
+			  if (!(i%7))
+				{
+			  log("(i%7=0)i="+ i);
+			  //..
+			  //..
+			    }
+		  }
+		  //3
+		  for ( let i =0; i<24; i+=7) {
+				  log("(i%7=0)i="+ i);
+				  //..
+				  //..
+		  }
+		  
+		  let Nj=30, Ni= 30;
+		  top:
+		  for ( let i =1; i<Ni; i++)
+		  	{
+		  		//...
+			for ( let j =1; j<Nj; j++){
+				
+				if(i*j+1 == j + i*7) 
+					{
+						log("match! i=" + i + ", j=" + j);
+						break top;
+					}
+			    }
+		  		//..
+		  	}
+		  	
+		  	// while
+			let k =0;
+			// while ( (val = input()) !== 'x') 
+			  while (k<3) {
+				  log("k="+k);	
+		  		 //..
+				   k++;
+		  	}
+		  	
+			  k=0;
+			for (;k<3;) {
+				log("k="+k);	
+				k++;
+			}
+		  
+			//  k=-2;
+			do {
+				log('d0.while, k='+ k++);	
+			} while (k<1);
+		    
+		    
+		//    1  2  3  4 .. 10
+		// 1  1  2  3 ...
+		// 2  2  4  6 ...
+		// 3  3  6  9 ...
+		// ...
+		// 10
+		
+		
+		</script>
+		
+		
+		
+		<h3>End of file..</h3>
+	</body>
+</html>
