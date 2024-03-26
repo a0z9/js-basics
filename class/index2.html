@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>JS Learn. Day 2.</title>
 		<script src="js/utils.js"></script>
+		<script src="js/arrays.js"></script>
 	</head>
 	<body>
 		<h3>JS Learn. Day 2.</h3>
@@ -172,14 +173,19 @@
 				log('d0.while, k='+ k++);	
 			} while (k<1);
 		    
-		    
-		//    1  2  3  4 .. 10
-		// 1  1  2  3 ...
-		// 2  2  4  6 ...
-		// 3  3  6  9 ...
-		// ...
-		// 10
-		
+			//mult();
+			
+			log('+arrays+'.repeat(33));
+			
+			//1
+			for (let idx=0; idx < arr.length; idx++) log("1.arr["+idx+"]="+arr[idx]);
+				
+			//2
+			for (let idx in arr) log("2.arr["+idx+"]="+arr[idx]);
+				
+			//3
+			for (let value of arr) log("3.arr[]="+value);
+			
 		
 		</script>
 		
