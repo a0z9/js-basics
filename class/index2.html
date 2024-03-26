@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day 2.</title>
+		<script src="js/utils.js"></script>
+	</head>
+	<body>
+		<h3>JS Learn. Day 2.</h3>
+		
+		
+		<script>
+			log('JS Learn. Day 2. if/else/switch & arrays');
+			
+			let dept = 'phys';
+			
+			if (dept == 'phys') {
+				log('phys ok 1!');
+				log('phys ok 2!');
+				// ....
+				}
+			//	a=222; // Uncaught SyntaxError: expected expression, got keyword 'else'
+			else {
+				log('other dept 1');
+				log('other dept 2');
+			}
+			
+			
+			var age = 18;
+			if (age>=19 || dept==='phys')
+				log('true!!!'); 
+			else
+				log('false!!'); 
+			
+			var data; log('data:' + data);
+			//1
+			data = data || 'data block 1..';
+			//2
+			if ( data === undefined ||
+				 data === null ||
+			    // isNaN(data) ||
+			     data === ''			
+			)	data = 'data block 2..';
+			
+			log('data:' + data);
+			
+		</script>
+		
+		<h3>End of doc.</h3>
+	</body>
+</html>
