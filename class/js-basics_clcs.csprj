@@ -1,0 +1,49 @@
+
+<codestructure version="2.1.0">
+<phptree>
+</phptree>
+<jstree>
+<treenode node="add;JS:JS Var Name;3299635777;f8;71;11;71;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="greets1;JS:JS Var Name;3299635777;f6;76;13;76;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="id;JS:JS Var Name;3299635777;f9;27;11;27;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="idx2;JS:JS Var Name;3299635777;f42;48;46;48;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="idx8;JS:JS Var Name;3299635777;f30;48;34;48;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="idx10;JS:JS Var Name;3299635777;f6;48;11;48;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="idx16;JS:JS Var Name;3299635777;f17;48;22;48;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="key;JS:JS Var Name;3299635777;f6;58;9;58;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="let4;JS:JS Var Name;3299635777;f6;38;10;38;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="log;JS:JS Var Name;2727694696;f6;0;9;0;;;;vposconsole.log;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="longData;JS:JS Var Name;3299635777;f6;64;14;64;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="pattern;JS:JS Var Name;3299635777;f6;81;13;81;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="phone;JS:JS Var Name;3299635777;f6;84;11;84;;;;vposphone.replace;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="power;JS:JS Var Name;3299635777;f6;70;11;70;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="res;JS:JS Var Name;3299635777;f6;50;9;50;;;;vposidx10;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="sentToSrv;JS:JS Var Name;3299635777;f6;73;15;73;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="var1;JS:JS Var Name;3299635777;f7;14;11;14;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="var2;JS:JS Var Name;3299635777;f7;15;11;15;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="var3;JS:JS Var Name;3299635777;f7;23;11;23;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="var4;JS:JS Var Name;3299635777;f6;37;10;37;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</jstree>
+<pythontree>
+</pythontree>
+</codestructure>
