@@ -26,7 +26,7 @@
 			}
 			
 			
-			var age = 18;
+			var age = 25;
 			if (age>=19 || dept==='phys')
 				log('true!!!'); 
 			else
@@ -43,6 +43,58 @@
 			)	data = 'data block 2..';
 			
 			log('data:' + data);
+			
+			// it, chem, mech, math
+			
+			// age
+			
+			if ( age >=16 && age<=23) {
+				log("students");
+				//
+				
+			}	
+			else if (age > 23 && age<=27)
+				{
+					log("Аспиранты");
+					//....
+				}
+			else if ( age>27)
+				{
+					log("Преподы");
+					//...
+					
+				}
+			else
+				{
+					log("Все другие");
+				}
+		
+		 dept = 'Phys';
+		
+		  switch(dept.trim().toLowerCase())
+		  	{
+		  	case 'it':
+				log('Выбор ИТ!');
+				//...	
+				break;
+			case 'phys':
+				log('Выбор Физики!');
+				//...
+				break;	
+			case 'chem':
+				log('Выбор Химии!');
+				//...
+				break;		
+		  	default:
+			  log('..wrong choice...');
+			  break;
+		  		
+		  	} 		
+			
+		const baseTime = 24;
+		let clusterTime = 
+		(dept.toLowerCase().trim() == 'it')?baseTime*1.1:baseTime;	
+		log("rent:" + clusterTime.toFixed(2));		
 			
 		</script>
 		
