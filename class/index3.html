@@ -80,6 +80,30 @@
 			arr.sort(absNumberSort);
 			pa(arr);
 			
+			// varargs
+			
+			function testVarArgs(){
+				log(arguments);
+				
+			}
+			
+			function Summa2(){
+				let s = 0;
+				for (let idx=0; idx<arguments.length; idx++)
+					s+=arguments[idx];
+				 
+				return s;
+			}
+			
+			function Summa(...args)
+			{
+				let s = 0;
+				for (let arg of args) s+=arg;
+
+				return s;
+			}
+			
+			
 		</script>
 		
 	</body>

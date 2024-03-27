@@ -3,7 +3,49 @@
 <phptree>
 </phptree>
 <jstree>
-<treenode node="mult;JS:Function Name;2727694696;f6;3;1;28;;;;vpos;;v;;a;;r;;d15,3;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="CounterU;JS:Function Name;375920866;f0;97;1;120;;;;vpos;;v;;aObject_;;cnumber;;r&#10;&lt;b&gt;Definition&lt;/b&gt;&#10;    function CounterU(c = 0)&#10;&#10;&lt;b&gt;Description&lt;/b&gt;&#10;    &#10;&lt;b&gt;description&lt;/b&gt;: Counter&#10;line 2&#10;line 3&#10;call [0]() - value&#10;call [1]() - increment&#10;....&#10;&lt;b&gt;author&lt;/b&gt;: Andrei Trainer&#10;&#10;&lt;b&gt;Parameters:&lt;/b&gt;&#10;    number &lt;b&gt;c&lt;/b&gt;;;d0,98;;b0,0;;m0;;e0;;i0;;o;;k;;lnumber c;;p;;x;;n">
+<treenode node="decr;JS:Function Name;375920866;f0;108;2;111;;;;vpos;;v;;aObject_;;c;;r;;d1,109;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="getc;JS:Function Name;375920866;f0;104;2;107;;;;vpos;;v;;aObject_;;c;;r;;d1,105;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="incr;JS:Function Name;375920866;f0;100;2;103;;;;vpos;;v;;aObject_;;c;;r;;d1,101;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="reset;JS:Function Name;375920866;f0;112;2;115;;;;vpos;;v;;aObject_;;c;;r;;d1,113;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="F1;JS:Function Name;375920866;f0;36;1;50;;;;vpos;;v;;aObject_;;c;;r;;d13,36;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="F2;JS:Function Name;375920866;f0;41;2;46;;;;vpos;;v;;aObject_;;c;;r;;d14,41;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="Summa;JS:Function Name;2693669795;f0;97;4;103;;;;vpos;;v;;aObject_;;c;;r;;d3,98;;b0,0;;m0;;e0;;i0;;o;;k;;largs;;p;;x;;n">
+</treenode>
+<treenode node="Summa2;JS:Function Name;2693669795;f0;89;4;95;;;;vpos;;v;;aObject_;;c;;r;;d20,89;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="absNumberSort;JS:Function Name;2693669795;f0;65;4;68;;;;vpos;;v;;aObject_;;c;;r;;d3,66;;b0,0;;m0;;e0;;i0;;o;;k;;lx;;py;;p;;x;;x;;n">
+</treenode>
+<treenode node="arr;JS:Function Name;2727694696;f12;3;15;3;;;;vposArray;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="c;JS:Function Name;375920866;f6;60;7;60;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="f1;JS:Function Name;375920866;f0;61;2;76;;;;vpos;;v;;aObject_;;c;;r;;d1,74;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="mult;JS:Function Name;2727694696;f6;5;1;30;;;;vpos;;v;;a;;r;;d15,5;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="name;JS:Function Name;375920866;f26;13;1;23;;;;vposString;;v;;a;;r;;d29,20;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="reverseNumberSort;JS:Function Name;2693669795;f0;60;4;63;;;;vpos;;v;;aObject_;;c;;r;;d3,61;;b0,0;;m0;;e0;;i0;;o;;k;;lx;;py;;p;;x;;x;;n">
+</treenode>
+<treenode node="run1;JS:Function Name;375920866;f0;128;1;136;;;;vpos;;v;;aObject_;;c;;r;;d15,128;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="sayGreets1;JS:Function Name;375920866;f0;2;1;10;;;;vpos;;v;;aObject_;;c;;r;;d33,2;;b0,0;;m0;;e0;;i0;;o;;k;;lname;;p;;x;;n">
+</treenode>
+<treenode node="testVarArgs;JS:Function Name;2693669795;f0;84;4;87;;;;vpos;;v;;aObject_;;c;;r;;d25,84;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Counter;JS:JS Var Name;375920866;f6;71;13;71;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Counter0;JS:JS Var Name;375920866;f6;58;14;58;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="CounterU2;JS:JS Var Name;375920866;f6;123;15;123;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="Ni;JS:JS Var Name;664871122;f15;139;17;139;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
@@ -15,15 +57,19 @@
 </treenode>
 <treenode node="T_WARN;JS:JS Var Name;664871122;f20;47;26;47;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
+<treenode node="a;JS:JS Var Name;375920866;f5;144;6;144;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
 <treenode node="a1;JS:JS Var Name;664871122;f7;22;9;22;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="add;JS:JS Var Name;3299635777;f8;71;11;71;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="age;JS:JS Var Name;664871122;f7;13;10;13;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
-<treenode node="arr;JS:JS Var Name;498849109;f4;0;7;0;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="arr;JS:JS Var Name;498849109;f4;0;7;0;;2693669795;f3;29;6;29;;;;vposArray;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="b;JS:JS Var Name;664871122;f7;25;8;25;;;;vposString;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="data;JS:JS Var Name;375920866;f4;34;8;34;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="dept;JS:JS Var Name;664871122;f8;68;12;68;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
@@ -63,6 +109,8 @@
 </treenode>
 <treenode node="openPercent2;JS:JS Var Name;664871122;f8;86;20;86;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
+<treenode node="pa;JS:JS Var Name;2727694696;f6;3;8;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
 <treenode node="pattern;JS:JS Var Name;3299635777;f6;81;13;81;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="phone;JS:JS Var Name;3299635777;f6;84;11;84;;;;vposphone.replace;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
@@ -70,6 +118,18 @@
 <treenode node="power;JS:JS Var Name;3299635777;f6;70;11;70;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="res;JS:JS Var Name;3299635777;f6;50;9;50;;;;vposidx10;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="res1;JS:JS Var Name;375920866;f4;138;8;138;;;;vposrun1;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="res2;JS:JS Var Name;375920866;f4;142;8;142;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="res3;JS:JS Var Name;375920866;f4;153;8;153;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="sayGreets2;JS:JS Var Name;375920866;f4;13;14;13;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="sayGreets3;JS:JS Var Name;375920866;f6;26;16;26;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="sayGreets3_0;JS:JS Var Name;375920866;f6;20;18;20;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="sentToSrv;JS:JS Var Name;3299635777;f6;73;15;73;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
