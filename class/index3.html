@@ -58,6 +58,27 @@
 			
 			// sort
 			
+			function reverseNumberSort(x, y)
+			{
+				return  Number(y)-Number(x);
+			}
+			
+			function absNumberSort(x, y)
+			{
+				return  Math.abs(Number(x)) - Math.abs(Number(y));
+			}
+			
+			log('-- sort arrays ---')
+			arr = [-12,212,6,5,0,33,-2,4,88,-11,2,3,7.33,-2.1];
+			pa(arr);
+			arr.sort();
+			pa(arr);
+			arr.sort((a,b)=>Number(a)-Number(b));
+			pa(arr);
+			arr.sort(reverseNumberSort);
+			pa(arr);
+			arr.sort(absNumberSort);
+			pa(arr);
 			
 		</script>
 		

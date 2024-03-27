@@ -1,6 +1,8 @@
 const log=console.log;
 
 
+const pa = (arr=[])=>log(`[${arr}]`);
+
 const mult=()=>{
 	//    1  2  3  4 .. 10
 	// 1  1  2  3 ...
