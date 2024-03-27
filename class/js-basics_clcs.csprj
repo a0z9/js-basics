@@ -3,11 +3,37 @@
 <phptree>
 </phptree>
 <jstree>
+<treenode node="mult;JS:Function Name;2727694696;f6;3;1;28;;;;vpos;;v;;a;;r;;d15,3;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Ni;JS:JS Var Name;664871122;f15;139;17;139;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Nj;JS:JS Var Name;664871122;f8;139;10;139;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="T_EXTREEME;JS:JS Var Name;664871122;f31;47;41;47;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="T_NORM;JS:JS Var Name;664871122;f9;47;15;47;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="T_WARN;JS:JS Var Name;664871122;f20;47;26;47;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="a1;JS:JS Var Name;664871122;f7;22;9;22;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
 <treenode node="add;JS:JS Var Name;3299635777;f8;71;11;71;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="age;JS:JS Var Name;664871122;f7;13;10;13;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="arr;JS:JS Var Name;498849109;f4;0;7;0;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="b;JS:JS Var Name;664871122;f7;25;8;25;;;;vposString;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="dept;JS:JS Var Name;664871122;f8;68;12;68;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="greets1;JS:JS Var Name;3299635777;f6;76;13;76;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
+<treenode node="i;JS:JS Var Name;664871122;f14;94;15;94;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
 <treenode node="id;JS:JS Var Name;3299635777;f9;27;11;27;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="idx;JS:JS Var Name;664871122;f12;180;15;180;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="idx2;JS:JS Var Name;3299635777;f42;48;46;48;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
@@ -17,6 +43,12 @@
 </treenode>
 <treenode node="idx16;JS:JS Var Name;3299635777;f17;48;22;48;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
+<treenode node="isFridgeOn;JS:JS Var Name;664871122;f8;83;18;83;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="j;JS:JS Var Name;664871122;f20;110;21;110;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="k;JS:JS Var Name;664871122;f7;156;8;156;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
 <treenode node="key;JS:JS Var Name;3299635777;f6;58;9;58;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="let4;JS:JS Var Name;3299635777;f6;38;10;38;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
@@ -24,6 +56,12 @@
 <treenode node="log;JS:JS Var Name;2727694696;f6;0;9;0;;;;vposconsole.log;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="longData;JS:JS Var Name;3299635777;f6;64;14;64;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="openPercen2;JS:JS Var Name;664871122;f9;88;20;88;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="openPercent;JS:JS Var Name;664871122;f8;84;19;84;;;;vposisFridgeOn;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="openPercent2;JS:JS Var Name;664871122;f8;86;20;86;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="pattern;JS:JS Var Name;3299635777;f6;81;13;81;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
@@ -34,6 +72,10 @@
 <treenode node="res;JS:JS Var Name;3299635777;f6;50;9;50;;;;vposidx10;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="sentToSrv;JS:JS Var Name;3299635777;f6;73;15;73;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="temp;JS:JS Var Name;664871122;f9;46;13;46;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="value;JS:JS Var Name;664871122;f12;186;17;186;;;;vpos;;v;;a;;r;;d-1,-1;;b0,3;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
 <treenode node="var1;JS:JS Var Name;3299635777;f7;14;11;14;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
 </treenode>
