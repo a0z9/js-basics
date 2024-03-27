@@ -160,8 +160,11 @@ function Summa(){
 	return s;
 }
 
-function Summa2(disc=1, ...args)
+
+function Summa2(disc, ...args)
 {
+	log(arguments);
+	log(args);
 	let s=0;
 	for (let arg of args)
 		s+=arg;
