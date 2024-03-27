@@ -5,6 +5,7 @@
 		<title>JS Learn. Day 3. G4.</title>
 		<script src="js/utils.js"></script>
 		<script src="js/funcs.js"></script>
+		<script src="js/arrays.js"> </script>
 	</head>
 	<body>
 		<h3>JS Learn. Day 3.</h3>
@@ -18,7 +19,54 @@
 			log( sayGreets3('Kate',1,2,3,4,[]) );
 			log( sayGreets3() );
 			log( createConnection())
+			log(`[${res1}]\n[${res2}]\n[${res3}]\n[${res4}]`);
 			
+			// arrays
+			arr = [];
+			log('-------stack------');
+			arr.push(1);
+			arr.push(2);
+			arr.push(3);
+			arr.push(4);
+			log(arr);
+			log(arr.pop());
+			log(arr);
+			
+			arr = [];
+			log('-------queue1-------');
+			arr.push(1);
+			arr.push(2);
+			arr.push(3);
+			arr.push(4);
+			log(arr);
+			log(arr.shift());
+			log(arr);
+			
+			log('-------queue2-------');
+			arr = [];
+			arr.unshift(1);
+			arr.unshift(2);
+			arr.unshift(3);
+			arr.unshift(4);
+			log(arr);
+			log(arr.pop());
+			log(arr);
+			
+			function modSort(x,y){
+				
+				return Math.abs(Number(x)) - Math.abs(Number(y));
+			}
+			
+			arr=[-1212,33,-4,55,6,-4,-100,0,34,2];
+			log(`[${arr}]`);
+			arr.sort();
+			log(`[${arr}]`);
+			arr.sort( (a,b)=>Number(a)-Number(b) );
+			log(`[${arr}]`);
+			arr.sort( (b,a)=>Number(a)-Number(b) );
+			log(`[${arr}]`);
+			arr.sort(modSort);
+			log(`[${arr}]`);
 				
 		</script>
 	</body>

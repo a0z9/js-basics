@@ -82,3 +82,93 @@ let outer2= "Global var2";
 //...
 log('--func-file--'.repeat(3));
 
+
+//замыкания
+
+function Counter()
+{
+	let counter = 0;
+	function f1()
+	{
+		return ++counter;
+	}
+
+	return f1;
+}
+
+function Counter2(counter=0)
+{
+	return function() {return ++counter;};
+}
+
+let Counter3 = (c=0)=>()=>++c;
+
+let Counter4 = (c=0)=>[()=>++c,()=>c];
+
+
+//self called funcs
+
+function F2(){
+	//...
+	var a22 = 12312;
+	log("F2 run code...");
+	
+	return [11,22,33,'res1'];
+	
+}
+
+let res1 = F2();
+
+let res2 = (function(){
+	//...
+	var a22 = 12312;
+	log("F2 run code...");
+
+	return [11,22,33,'res2'];
+
+})();
+
+let res3 = (function() {
+	//...
+	var a22 = 12312;
+	log("F2 run code...");
+
+	return [11,22,33,'res3'];
+
+}());
+
+let res4 = (()=>{
+	//...
+	var a22 = 12312;
+	log("F2 run code...");
+
+	return [11,22,33,'res4'];
+
+})();
+
+// varargs
+
+function testVarArgs(){
+	for (let arg of arguments)	log(arg);
+	return `[${[...arguments]}]`;	
+}
+
+function Summa(){
+	let s=0;
+	for (let arg of arguments) s+=arg;
+	//for (let idx=0; idx < arguments.length; idx++)	s+=arguments[idx];	
+	return s;
+}
+
+function Summa2(disc=1, ...args)
+{
+	let s=0;
+	for (let arg of args)
+		s+=arg;
+	//for (let idx=0; idx < args.length; idx++)	s+=args[idx];
+	return s*disc;
+}
+
+
+
+
