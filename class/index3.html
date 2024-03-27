@@ -24,6 +24,40 @@
 			
 			F1();
 			
+			// arrays
+			
+			
+			arr=[];
+			log('stack');
+			arr.push(1); arr.push(2);arr.push(3);arr.push(4);
+			log(`[${arr}]`);
+			arr.pop();
+			log(`[${arr}]`);
+			
+			arr=[];
+			log('queue 1');
+			arr.push(1); arr.push(2);arr.push(3);arr.push(4);
+			log(`[${arr}]`);
+			arr.shift();
+			log(`[${arr}]`);
+			
+			arr=[];
+			log('queue 2');
+			arr.unshift(1); arr.unshift(2);arr.unshift(3);arr.unshift(4);
+			log(`[${arr}]`);
+			arr.pop();
+			log(`[${arr}]`);
+			
+			log('splice - insert');
+			arr.splice(2,0,"one","two");
+			log(`[${arr}]`);
+			
+			log('splice - del');
+			arr.splice(3,1);
+			log(`[${arr}]`);
+			
+			// sort
+			
 			
 		</script>
 		

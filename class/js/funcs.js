@@ -123,6 +123,45 @@ function CounterU(c = 0)
 
 const CounterU2=(c=0)=>[()=>c,()=>++c,()=>--c,()=>c=0];
 
+// self run funcs
+
+//1
+function run1(){
+	
+	var a=11;
+	//....
+	log("runner 1");
+	
+	
+	return [a,11,'run1'];
+}
+
+let res1 = run1();
+
+
+
+let res2 = (function(){
+
+	var a=11;
+	//....
+	log("runner 2");
+
+
+	return [a,11,'run2'];
+})();
+
+
+let res3 = (function() {
+
+	var a=11;
+	//....
+	log("runner 3");
+
+
+	return [a,11,'run3'];
+}());
+
+
 
 
 
