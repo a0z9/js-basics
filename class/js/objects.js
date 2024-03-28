@@ -66,8 +66,148 @@ Object.defineProperty(o3,'k1',
   enumerable: true,
   configurable: false	
 }
-)
+);
 
+
+let student = {id: 1222, 'name':'Basil', age:22, dept:'chem', 
+   getInfo: function() { return `Student id:${this.id}, name:${this.name}, age:${this.age}, dept:${this.dept}`; },
+   toString: function() { return this.getInfo();  }
+   
+};
+
+
+// multiple objects
+
+
+let Student =
+function(id, name, age, dept) {
+	
+	this.id = id; 
+	this.name = name; 
+	this.age = age; 
+	this.dept = dept;
+	
+}
+
+Student.prototype.getInfo = function() { return `Student id:${this.id}, name:${this.name}, age:${this.age}, dept:${this.dept}`; };
+
+Student.prototype.toString = function() { return this.getInfo(); };
+
+
+function createStudent(id, name, age, dept)
+{
+	let student = new Student(id, name, age, dept);
+	Object.defineProperty(student,'id',
+	{
+		value: id,
+		writable: false,
+		enumerable: true,
+		configurable: false
+	});
+//...
+
+   return student;	
+}
+
+
+let kate = new Student(101,'Kate',19,'it');
+let nik = new Student(103,'Коля',21,'geo');
+let jane = createStudent(112,'Jane',20,'geo');
+//...
+
+// classes
+
+class Student2
+{
+constructor(id, name, age, dept) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.dept = dept;
+}	
+	
+getInfo() { return `Student id:${this.id}, name:${this.name}, age:${this.age}, dept:${this.dept}`; }
+
+toString() { return this.getInfo(); }	
+}
+
+
+
+class Base
+{
+    #id;
+    static UNI = 'ISU';	// writable
+    static get UNI2(){return 'ISU'; }
+	constructor(id, name, age, dept)
+	{
+		this.#id = id;
+		this.name = name;
+		this.age = age;
+		this.dept = dept;
+	}
+    get id(){ log('++ call getter'); return this.#id; }
+    set id(v){ log('++ call setter'); if( v > 4000 && v <=8000   ) this.#id = v; } 
+    
+	getInfo()
+	{
+		return `id:${this.#id}, name:${this.name}, age:${this.age}, dept:${this.dept}`;
+	}
+
+	toString()
+	{
+		return this.getInfo();
+	}
+}
+
+class Student3 extends Base
+{
+	constructor(id, name, age, dept, avgMark=0)
+	{
+		super(id, name, age, dept);
+		this.avgMark = avgMark;
+	}
+
+	getInfo()
+	{
+		return `Student {${super.getInfo()}, avgMark:${this.avgMark}}`;
+	}
+
+	toString()
+	{
+		return this.getInfo();
+	}
+}
+
+class Prepod extends Base
+{
+	constructor(id, name, age, dept, salary=55)
+	{
+		super(id, name, age, dept);
+		this.salary = salary;
+	}
+
+	getInfo()
+	{
+		return `Преподаватель {${super.getInfo()}}`;
+	}
+
+	toString()
+	{
+		return this.getInfo();
+	}
+}
+
+
+
+let ann = new Student3(1111,'Ann',22,'chem',4.7)
+log(''+ann);
+
+let vic = new Prepod(72973,'Виктор Андреевич',38,'chem',554);
+log(''+vic);
+
+
+
+log(''+student);
 
 //
 
