@@ -141,13 +141,20 @@ var студент = new Студент(2111,'Дмитрий',21);
 
 class Base
 {
+#id;	 // private
+//static UNIVER="ISU"  // writable
+
+static get(){return 'ISU';}
+get id(){ log('call getter'); return this.#id; }
+//set id(v){ log('call setter'); this.#id = v; }
+
 constructor(id, name, age)
 	{
-		this.id = id;
+		this.#id = id;
 		this.name = name;
 		this.age = age;
 	}
-
+    
 	getInfo() { return `${this.name}, id:${this.id}, age:${this.age}`;}
 
 	toString() { return this.getInfo(); }
@@ -203,5 +210,8 @@ let vv= new Prepod(12387,"Виктор Викторович", 45, '"Общей �
 log(vv);
 log('' + vv);
 
+Object.preventExtensions(vv);
+Object.preventExtensions(johnny);
+Object.preventExtensions(Prepod);
 
 
