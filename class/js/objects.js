@@ -37,28 +37,71 @@ let o4 = JSON.parse(JSON.stringify(o1));
 log(o4)
 
 
+//2
 let o11 = {...o1};
 let diff = {'k7': o1.k7};
 
 delete o11.k7;
-//2
-let o5 =structuredClone(o11) 
-o5={...o5,...diff}; 
 
+let o5 =structuredClone(o11); 
+o5={...o5,...diff}; 
+o11=null;
+
+
+log('++ props descriptors, freeze, seal ++');
 
 Object.defineProperty(o5,'k1',
 {
 value:1,
 writable: false,
 configurable: false,
-enumerable: false	
+enumerable: true //false	
 }
 );
 
+// Object.seal(o5);
+Object.freeze(o5);  // поверхностная заморозка
+
+
+// шаблоны и конструкторы
+
+let student = {id:101, name:"Peter", age:19,
+               getInfo: function() { /*log(this);*/ return `Student ${this.name}, id:${this.id}, age:${this.age}`;},
+  //             getName: ()=>{log(this); return this.name; }  // this -> Window 
+toString: function() { return this.getInfo();}
+};
+
+
+function Student(id,name,age)
+{
+	this.id = id;
+	this.name = name;
+	this.age = age;
+}
+
+Student.prototype.getInfo = function() { return `Student ${this.name}, id:${this.id}, age:${this.age}`;};
+Student.prototype.toString = function() { return this.getInfo();};
+
+
+function createStudent(id, name, age)
+{
+	
+	
+	
+	
+}
 
 
 
+let kate = new Student(111,"Kate",21);
+let basil = new Student(133,"Basil",20);
 
+let studentsCol = ['122,Катя,21', '145,Николай,20' ];
+students = [];
+for (let st of studentsCol) {
+	let values = st.split(',');
+	students.push(new Student(Number(values[0]), values[1], Number(values[2]) ) );	
+}
 
 
 
