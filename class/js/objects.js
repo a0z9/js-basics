@@ -178,6 +178,7 @@ class Student3 extends Base
 	}
 }
 
+
 class Prepod extends Base
 {
 	constructor(id, name, age, dept, salary=55)
