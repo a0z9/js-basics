@@ -82,13 +82,24 @@ function Student(id,name,age)
 Student.prototype.getInfo = function() { return `Student ${this.name}, id:${this.id}, age:${this.age}`;};
 Student.prototype.toString = function() { return this.getInfo();};
 
+//new Student(id,name,age);
 
 function createStudent(id, name, age)
 {
+	let o = new Student(id,name,age);
+
+
+	Object.defineProperty(o,'id',
+	{
+		value:id,
+		writable: false,
+		configurable: false,
+		enumerable: true 
+	});
 	
-	
-	
-	
+	Object.seal(o);
+		
+	return o;
 }
 
 
@@ -100,12 +111,97 @@ let studentsCol = ['122,Катя,21', '145,Николай,20' ];
 students = [];
 for (let st of studentsCol) {
 	let values = st.split(',');
-	students.push(new Student(Number(values[0]), values[1], Number(values[2]) ) );	
+	//students.push(new Student(Number(values[0]), values[1], Number(values[2]) ) );
+	students.push(createStudent(Number(values[0]), values[1], Number(values[2]) ) );	
 }
 
 
+// class 
 
 
+class Студент
+{
+
+constructor(id, name, age)
+{
+	this.id = id;
+	this.name = name;
+	this.age = age;
+}
+
+getInfo() { return `Student ${this.name}, id:${this.id}, age:${this.age}`;}
+
+toString() { return this.getInfo(); }
+
+
+}
+
+var студент = new Студент(2111,'Дмитрий',21);
+
+
+class Base
+{
+constructor(id, name, age)
+	{
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+
+	getInfo() { return `${this.name}, id:${this.id}, age:${this.age}`;}
+
+	toString() { return this.getInfo(); }
+    //...
+}
+
+class Student2 extends Base
+{
+
+	constructor(id, name, age, mark)
+	{
+		super(id, name, age);
+		this.mark = mark;
+	}
+
+	getInfo()
+	{
+		return `Студент ${super.getInfo()}, mark:${this.mark}`;
+	}
+
+	toString()
+	{
+		return this.getInfo();
+	}
+}
+
+
+let johnny = new Student2(122,"Иван", 18, 5);
+log(johnny);
+log('' + johnny);
+
+
+class Prepod extends Base
+{
+	constructor(id, name, age, dept)
+	{
+		super(id, name, age);
+		this.dept = dept;
+	}
+
+	getInfo()
+	{
+		return `Преподаватель ${super.getInfo()}, кафедра:${this.dept}`;
+	}
+
+	toString()
+	{
+		return this.getInfo();
+	}
+}
+
+let vv= new Prepod(12387,"Виктор Викторович", 45, '"Общей физики"');
+log(vv);
+log('' + vv);
 
 
 
