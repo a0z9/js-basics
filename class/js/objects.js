@@ -178,6 +178,12 @@ class Student3 extends Base
 	}
 }
 
+/*
+class Master extends Student3{
+	
+}
+*/
+
 
 class Prepod extends Base
 {
