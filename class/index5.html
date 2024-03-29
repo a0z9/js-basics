@@ -66,9 +66,21 @@
 			
 		// Добавление меню
 		
+		   let menuTop = document.createElement('div');
+		   menuTop.innerHTML = 'Top menu';
+		   menuTop.setAttribute('class','menu')
 		   
+		   let menuBottom = menuTop.cloneNode(true);
+		   menuBottom.innerHTML = 'Bottom menu';
 			
+			document.body.appendChild(menuBottom)
+			//1
+			//document.body.insertBefore(menuTop, document.body.firstElementChild);
+			
+			//2
+			document.body.insertAdjacentElement('afterBegin',menuTop);
 		
+		// -----------------------------	 
 			
 			const srvData = [
 			{name:'phys', text:"Физический"},
