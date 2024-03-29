@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day 5. G5.</title>
+		<script src="js/utils.js"> </script>
+		<link href="css/base.css" rel="stylesheet"/>	
+	</head>
+	<body>
+		<h3> JS Learn. Day 5. DOM. </h3> 
+		
+		<div id="div0"> Top div 
+		  <div name="inner"> Раздел данных 1 </div>
+		  <div> Data </div>
+		  <!-- Text comment -->
+		  
+		  <span name="inner"> Text span </span>
+		  <div > Курс JS </div>
+		  <!--div name="inner">Old data</div-->
+		</div>
+		<div name="inner">Second</div>
+		
+			
+		<h3> End of doc... </h3>
+		<script>
+		
+		let divs = document.getElementsByTagName('div');
+		for (let div of divs)	div.setAttribute('style','font: 20px courier;'); 
+		
+		let div0 = document.getElementById('div0');
+		let style = div0.getAttribute('style') + "width:50%;";
+		div0.setAttribute('style',style)
+		
+		//1
+		div0.innerHTML += "Final Text";
+		div0.firstChild.nodeValue = "Top 2 \n\t"
+		
+		//name
+		let names=document.getElementsByName('inner');
+		for (let name of names)	name.className = 'back1';
+		
+		
+		</script>
+	</body>
+</html>
