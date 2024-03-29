@@ -9,17 +9,25 @@
 	<body>
 		<h3> JS Learn. Day 5. </h3>
 		
-		<div> Root div
+		<div id="div0" > Root div
 		   <div> Chem </div>
+		   <!-- Phys dept -->  
 		   <div> Phys </div>
-		   <span> IT </span>
+		   <span id="span0"> IT </span>
 		   <div> Math <div> Mech </div></div>
 		</div>
 				
 		
 		<h3> End of doc.. </h3>
 		<script>
-			
+			let divs = document.getElementsByTagName('div');
+			log(divs);	
+			for (let div of divs) div.setAttribute("style",'color:green');
+				
+			let div0 = document.getElementById('div0');
+			div0.innerHTML += ' Корневой раздел'; // element node
+			div0.firstChild.data =  div0.firstChild.data.toUpperCase() + '0'; 	// text node
+				
 			
 		</script>
 	</body>
