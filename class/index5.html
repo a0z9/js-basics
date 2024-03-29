@@ -24,6 +24,19 @@
 		</div>
 		<div name="inner" class="test" uni-data-best-fit="123">Second</div>
 		
+		<label for="login">Login:</label>  <input id="login"/> <br/>
+		
+		<select>
+			<option name="op1">Option1</option>
+			<option name="op2">Option2</option>
+			<option name="op3">Option3</option>
+			<option name="op4">Option4</option>
+		</select>
+		
+		
+		<select id="depts"></select>
+		
+		
 		<widget par1="eee" par2="123123"></widget>
 			
 		<h3> End of doc... </h3>
@@ -79,6 +92,45 @@
 		
 		// adjacent HTML
 		div1.insertAdjacentHTML('beforeEnd','<span>MY SPAN DATA</span>');
+		
+		// TOP/BOTTOM menubar
+		
+		let menubarTOP = document.createElement('div');
+		menubarTOP.className = 'menu';
+		menubarTOP.innerHTML = 'TOP menu';
+		
+		let menubarBOTTOM = menubarTOP.cloneNode(true);
+		menubarBOTTOM.innerHTML = 'BOTTOM menu';
+		
+		document.body.appendChild(menubarBOTTOM);
+		//1
+		//document.body.insertBefore(menubarTOP,document.body.firstChild);
+		
+		//2
+		document.body.insertAdjacentElement('afterBegin',menubarTOP);
+		
+		// input
+		document.getElementById('login').value = "AND2846876";
+		
+		// Selection
+		
+		const serverData = [
+		{name:'phys', text:"Физический"},
+		{name:'chem', text:"Химический"},
+		{name:'it', text:"ИТ"},
+		{name:'astro', text:"Астрономический"} //v
+		];
+		
+		const depts = document.getElementById('depts');
+		
+		for(let dept of serverData)
+			{
+				const option = document.createElement('option');
+				option.setAttribute('name',dept.name);
+				option.innerText = dept.text;
+				if (dept.name == 'astro')	option.setAttribute('selected','selected');
+				depts.appendChild(option);
+			}
 		
 		
 		</script>

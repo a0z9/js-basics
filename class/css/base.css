@@ -1,6 +1,6 @@
 
 
-div {
+div, input, select {
 	padding: 3px;
 	margin: 3px;
 	border: solid 1px;
@@ -13,3 +13,13 @@ div {
 }
 
 .test {font-style: italic; }
+
+
+.menu {
+	padding: 3px;
+	margin: 3px;
+	border: solid 1px;
+	border-color: #00aaff;
+	background-color:#00aaff;
+	border-radius:6px;
+}
