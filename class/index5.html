@@ -18,19 +18,20 @@
 		  <div class='test'> Data </div>
 		  <!-- Text comment -->
 		  
-		  <span name="inner"> Text span </span>
-		  <div > Курс JS </div>
+		  <span name="inner" uni-data-best-fit="12"> Text span </span>
+		  <div id="div1"> Курс JS </div>
 		  <!--div name="inner">Old data</div-->
 		</div>
-		<div name="inner" class="test">Second</div>
+		<div name="inner" class="test" uni-data-best-fit="123">Second</div>
 		
+		<widget par1="eee" par2="123123"></widget>
 			
 		<h3> End of doc... </h3>
 		<script>
 		// by tags
 		let divs = document.getElementsByTagName('div');
 		for (let div of divs)
-			div.setAttribute('style','border-color:lightgreen;'); 
+			div.setAttribute('style','border-radius:4px;'); 
 		
 		//by id
 		let div0 = document.getElementById('div0');
@@ -54,9 +55,30 @@
 			
 		}
 		
+		// dynamic elements
 		
+		let div7 = document.createElement('div');
+		div7.innerText = "Dynamic div";
+		div7.className = 'test';
+		//...
 		
+		//1
+		div0.appendChild(div7);
+		div0.appendChild(div7.cloneNode(true));
+				
+		let div8 = div7.cloneNode(true);
+		div8.innerText = "UP div";
+		div8.setAttribute('style','color:red; border-color: red;');
 		
+		// adjacent element
+		let div1 = document.getElementById('div1');
+		div1.insertAdjacentElement('beforeEnd',div8); 
+		div1.insertAdjacentElement('afterEnd',div8.cloneNode(true)); 
+		div1.insertAdjacentElement('beforeBegin',div8.cloneNode(true)); 
+		div1.insertAdjacentElement('afterBegin',div8.cloneNode(true)); 
+		
+		// adjacent HTML
+		div1.insertAdjacentHTML('beforeEnd','<span>MY SPAN DATA</span>');
 		
 		
 		</script>

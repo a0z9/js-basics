@@ -4,8 +4,8 @@ div {
 	padding: 3px;
 	margin: 3px;
 	border: solid 1px;
-	border-color: #55aa00
-	
+	border-color: #55aa00;
+	border-radius:6px;
 }
 
 .back1 {
