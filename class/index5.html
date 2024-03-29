@@ -10,11 +10,11 @@
 		<h3> JS Learn. Day 5. </h3>
 		
 		<div id="div0" > Root div
-		   <div> Chem </div>
+		   <div name="high"> Chem </div>
 		   <!-- Phys dept -->  
-		   <div> Phys </div>
-		   <span id="span0"> IT </span>
-		   <div> Math <div> Mech </div></div>
+		   <div class="inner"> Phys </div>
+		   <span id="span0" name="high"> IT </span>
+		   <div> Math <div class="inner"> Mech </div></div>
 		</div>
 				
 		
@@ -27,6 +27,14 @@
 			let div0 = document.getElementById('div0');
 			div0.innerHTML += ' Корневой раздел'; // element node
 			div0.firstChild.data =  div0.firstChild.data.toUpperCase() + '0'; 	// text node
+			div0.setAttribute('style','width:20%;')
+				
+			
+			let names = document.getElementsByName('high');
+			for (let name of names) name.setAttribute('class','data');
+			
+			let classes = document.getElementsByClassName('inner');
+			for (let inner of classes) inner.setAttribute('style','font:20px arial')
 				
 			
 		</script>
