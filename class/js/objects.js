@@ -115,7 +115,7 @@ let nik = new Student(103,'Коля',21,'geo');
 let jane = createStudent(112,'Jane',20,'geo');
 //...
 
-// classes
+// classes (emulation)
 
 class Student2
 {
