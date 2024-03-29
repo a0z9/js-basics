@@ -26,6 +26,7 @@
 		</select>
 		
 		
+		<select id="depts"></select>
 				
 		
 		<h3> End of doc.. </h3>
@@ -68,7 +69,15 @@
 		
 		   let menuTop = document.createElement('div');
 		   menuTop.innerHTML = 'Top menu';
-		   menuTop.setAttribute('class','menu')
+		   // работа с атрибутом class
+		   //1 100% совместимость
+		   //menuTop.setAttribute('class','menu')
+		   
+		   //2
+		   //menuTop.className ='menu';
+		   
+		   //3 - winner
+		   menuTop.classList.add('menu');
 		   
 		   let menuBottom = menuTop.cloneNode(true);
 		   menuBottom.innerHTML = 'Bottom menu';
@@ -82,14 +91,25 @@
 		
 		// -----------------------------	 
 			
-			const srvData = [
+			const depthList = [
 			{name:'phys', text:"Физический"},
 			{name:'it', text:"IT"},
 			{name:'chem', text:"Химическмй"},
 			{name:'el', text:"Электроники"},
 			];	
 				
-					
+		// Меню -  список факультетов
+		
+		const depts = document.getElementById('depts');
+		for(let dept of depthList) 
+			{
+				let option = document.createElement('option');
+				option.setAttribute('name',dept.name);
+				option.innerText = dept.text;
+				depts.appendChild(option);	
+			}
+		   
+		  			
 				
 			
 		</script>
