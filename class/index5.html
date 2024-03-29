@@ -7,26 +7,32 @@
 		<link href="css/base.css" rel="stylesheet"/>	
 	</head>
 	<body>
+	<style>
+		
+		
+	</style>
 		<h3> JS Learn. Day 5. DOM. </h3> 
 		
 		<div id="div0"> Top div 
 		  <div name="inner"> Раздел данных 1 </div>
-		  <div> Data </div>
+		  <div class='test'> Data </div>
 		  <!-- Text comment -->
 		  
 		  <span name="inner"> Text span </span>
 		  <div > Курс JS </div>
 		  <!--div name="inner">Old data</div-->
 		</div>
-		<div name="inner">Second</div>
+		<div name="inner" class="test">Second</div>
 		
 			
 		<h3> End of doc... </h3>
 		<script>
-		
+		// by tags
 		let divs = document.getElementsByTagName('div');
-		for (let div of divs)	div.setAttribute('style','font: 20px courier;'); 
+		for (let div of divs)
+			div.setAttribute('style','border-color:lightgreen;'); 
 		
+		//by id
 		let div0 = document.getElementById('div0');
 		let style = div0.getAttribute('style') + "width:50%;";
 		div0.setAttribute('style',style)
@@ -35,9 +41,22 @@
 		div0.innerHTML += "Final Text";
 		div0.firstChild.nodeValue = "Top 2 \n\t"
 		
-		//name
+		//by name
 		let names=document.getElementsByName('inner');
-		for (let name of names)	name.className = 'back1';
+		//for (let name of names)	name.className = 'back1';
+		for (let name of names) name.classList.add('back1');
+		
+		//by class
+		let classes=document.getElementsByClassName('test');
+		for (let el of classes) {
+			//let style = el.getAttribute('style');
+			el.innerText = el.innerText.toUpperCase();
+			
+		}
+		
+		
+		
+		
 		
 		
 		</script>
