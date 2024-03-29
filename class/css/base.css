@@ -1,6 +1,6 @@
 
 
-div {
+div, input, select {
 	
 	padding: 2px;
 	margin: 2px;
@@ -8,6 +8,13 @@ div {
 	border-color: #00aa00;
 }
 
+
+.menu{
+	background-color: #55aaff;	
+	border: solid 1px;
+	border-color: #55aaff;
+	
+}
 
 .data {
   	background-color: #aaff7f

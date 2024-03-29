@@ -16,6 +16,16 @@
 		   <span id="span0" name="high"> IT </span>
 		   <div> Math <div class="inner"> Mech </div></div>
 		</div>
+		<input id="input1"/> <label for="input1">Name</label> <br/>
+		
+		<select>
+		<option name="opt1">opt1</option>	
+		<option name="opt2">opt2</option>
+		<option name="opt3">opt3</option>
+		<option name="opt4">opt4</option>	
+		</select>
+		
+		
 				
 		
 		<h3> End of doc.. </h3>
@@ -34,7 +44,40 @@
 			for (let name of names) name.setAttribute('class','data');
 			
 			let classes = document.getElementsByClassName('inner');
-			for (let inner of classes) inner.setAttribute('style','font:20px arial')
+				for (let inner of classes)
+					inner.setAttribute('style','font:20px arial')
+
+			let input1 = document.getElementById('input1');
+			input1.value = "Andrei";
+			
+			
+			// Добавление и клонирование элементов
+			
+			let div4 = document.createElement('div');
+			div4.innerText = "Мои данные";
+			div4.setAttribute('style','border-color:red; color:red;');
+			
+			div0.insertBefore(div4,div0.firstElementChild)
+			
+			let div41 = div4.cloneNode(true);
+					
+			//  beforeBegin<div>afterBegin     beforeEnd</div>afterEnd
+			div0.children[1].insertAdjacentElement('beforeEnd',div41);
+			
+		// Добавление меню
+		
+		   
+			
+		
+			
+			const srvData = [
+			{name:'phys', text:"Физический"},
+			{name:'it', text:"IT"},
+			{name:'chem', text:"Химическмй"},
+			{name:'el', text:"Электроники"},
+			];	
+				
+					
 				
 			
 		</script>
