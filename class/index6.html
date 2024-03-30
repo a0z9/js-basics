@@ -16,9 +16,13 @@
 		<button onclick="handler1()" oncontextmenu="handler2()">Press1-2 </button>
 		
 		<!-- v.2 -->
-		
 		<button id="btn2">Press2 </button>
+		
+		<!-- v.3 -->
 		<button id="btn3">Press3 </button>
+		
+		<!-- event object -->
+		<button id="btn4">Press4 </button>
 		
 		
 		 		
@@ -29,10 +33,30 @@
 			const handler2 =()=> log('++ btn1-2 right click', new Date());
 			function handler3() { log('+++ btn2 clicked', new Date()); }
 			
+			function handler4()
+			{
+				log('+++ btn3 extra event handler', new Date());
+			}
+			const handler5=(e)=>{
+				if (e.altKey && e.shiftKey)
+					log('+++ btn4 clicked wth Alt+Shift or Ctr+Shift', new Date());  }
 			
+			//v.2.
 			const btn2 = document.getElementById('btn2');
 			btn2.onclick = ()=>log('++ btn2 clicked', new Date());
 			btn2.onclick = handler3;
+			
+			//v.3.
+			const btn3 = document.getElementById('btn3');
+			
+			btn3.addEventListener('click', ()=>log('+++ btn3 clicked', new Date()));
+			btn3.addEventListener('click', handler4);
+			// btn3.removeEventListener('click',handler4)
+		
+		    // event Object
+			const btn4 = document.getElementById('btn4');
+			btn4.onclick=(e)=>log(e);
+			btn4.addEventListener('click', handler5);
 			
 		
 		
