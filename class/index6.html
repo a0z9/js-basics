@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Learn. Day 6. DOM events. G5.</title>
+		<script src="js/utils.js"> </script>
+		<link href="css/base.css" rel="stylesheet"/>	
+	</head>
+	<body>
+		<h3>JS Learn. Day 6. DOM events.</h3>
+		
+		<!-- v.1-1 -->
+		<button onclick="log('++ btn1-1', new Date())">Press1-1 </button>
+		
+		<!-- v.1-2 -->
+		<button onclick="handler1()" oncontextmenu="handler2()">Press1-2 </button>
+		
+		<!-- v.2 -->
+		
+		<button id="btn2">Press2 </button>
+		<button id="btn3">Press3 </button>
+		
+		
+		 		
+		<script>
+			document.body.oncontextmenu = (e)=>e.preventDefault();
+		
+			function handler1() {log('++ btn1-2 left click', new Date());}
+			const handler2 =()=> log('++ btn1-2 right click', new Date());
+			function handler3() { log('+++ btn2 clicked', new Date()); }
+			
+			
+			const btn2 = document.getElementById('btn2');
+			btn2.onclick = ()=>log('++ btn2 clicked', new Date());
+			btn2.onclick = handler3;
+			
+		
+		
+		</script>
+	</body>
+</html>
