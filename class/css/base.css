@@ -1,11 +1,12 @@
 
 
-div, input, select {
+div, input, select, button {
 	
 	padding: 2px;
 	margin: 2px;
 	border: solid 1px;
 	border-color: #00aa00;
+	border-radius: 4px;
 }
 
 
