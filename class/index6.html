@@ -49,11 +49,15 @@
 			
 			//v4
 			const btn3 = document.getElementById('btn3');
+			const handler3 = ()=> log('2-btn3++', new Date());
+			
 			btn3.addEventListener('click', ()=>
 			{
-			log('btn3++', new Date());
+			log('1-btn3++', new Date());
 			btn3.setAttribute('style','color:green;');	
 			});
+			
+			btn3.addEventListener('click', handler3);
 			
 			//v5
 			const btn4 = document.getElementById('btn4');
@@ -77,6 +81,8 @@
 			menuTop.innerHTML = 'Top menu';
 			menuTop.classList.add('menu');
 			document.body.insertAdjacentElement('afterBegin',menuTop);
+			
+			
 			
 			
 		</script>

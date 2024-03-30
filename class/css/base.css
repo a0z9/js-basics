@@ -9,6 +9,11 @@ div, input, select, button {
 	border-radius: 4px;
 }
 
+.fold
+{
+  height:4em	
+}
+
 
 .menu{
 	background-color: #55aaff;	
