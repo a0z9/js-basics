@@ -93,7 +93,13 @@
 			menubarTOP.onmouseout = (e)=>e.target.classList.remove('menu-activated');
 			
 			// mousemove Event
+			const coords = document.getElementById('coords');
+			const points = document.getElementById('points'); 
 			
+			outer.onmousemove = (e)=>{
+				coords.innerHTML = `X=${e.x}, Y=${e.y}`;	
+				
+			}
 			
 			
 			
