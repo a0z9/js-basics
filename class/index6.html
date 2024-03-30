@@ -99,16 +99,16 @@
 			
 			outer.onmousemove = (e)=>{
 				const rect= outer.getBoundingClientRect();
-				const x = rect.x.toFixed();
-				const y = rect.y.toFixed();
+				const x = Math.floor(rect.x);
+				const y = Math.floor(rect.y);
 				coords.innerHTML = `X=${e.x},Y=${e.y}, Relative: (${e.x-x},${e.y-y})`;	
 				
 			};
 			
 			outer.onclick = (e)=>{
 				const rect= outer.getBoundingClientRect();
-				const x = rect.x.toFixed();
-				const y = rect.y.toFixed();
+				const x = Math.floor(rect.x);
+				const y = Math.floor(rect.y);
 				const point =  document.createElement('li');
 				point.innerHTML=` (${e.x-x},${e.y-y})`;
 				points.appendChild(point);
