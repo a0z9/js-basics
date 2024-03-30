@@ -7,11 +7,19 @@ div, input, select, button {
 	border: solid 1px;
 	border-color: #00aa00;
 	border-radius: 4px;
+	transition: height 1s ease-in-out;
 }
 
-.fold
+
+ul li {
+	align-items: flex-end;
+	
+}
+
+.unfold
 {
-  height:4em	
+	height:2em;
+	font: 25px arial;
 }
 
 
@@ -19,7 +27,7 @@ div, input, select, button {
 	background-color: #55aaff;	
 	border: solid 1px;
 	border-color: #55aaff;
-	font: 25px courier;
+	/*font: 20px courier;*/
 	
 }
 

@@ -23,6 +23,12 @@
 		<button id="btn4"> Press 4 </button>
 		</div>
 		
+		<label for="login">Login:</label> <input id="login"/> <br/>
+		<label for="pass">Pass :</label> <input id="pass" type="password"/> <br/>
+		
+		<div id="field" style="width:15em; height:15em;"></div>
+		<div id="data" style="width:15em;"></div>
+		<ol id="points"></ol>
 		
 		<h3>End of doc.. </h3>
 		<script>
@@ -82,8 +88,55 @@
 			menuTop.classList.add('menu');
 			document.body.insertAdjacentElement('afterBegin',menuTop);
 			
+			menuTop.onmouseover = (e)=>{
+				e.target.classList.add('unfold');
+				// add control elements ...
+			};
+			
+			menuTop.onmouseout = (e)=>{
+				e.target.classList.remove('unfold');
+				// remove control elements ...
+			};
+			
+			// field coords
+			
+			const field = document.getElementById('field');
+			const data = document.getElementById('data');
+			const points = document.getElementById('points');
+			
+			//const rect = field.getBoundingClientRect();
+			
+			field.onmousemove = (e)=>{
+				const rect = field.getBoundingClientRect();
+				data.innerText = `x=${e.x - rect.x.toFixed()}, y=${e.y - rect.y.toFixed()}
+				x=${e.x}, y=${e.y}`;	
+				
+			};
+			
+			field.onclick = (e)=>{
+				const point = document.createElement('li');
+				const rect = field.getBoundingClientRect();
+				point.innerText = `  [${e.x - rect.x.toFixed()},${e.y - rect.y.toFixed()}]`;
+				points.appendChild(point);
+				log(e);
+			};
 			
 			
+			// Login keybords events
+			
+			const login = document.getElementById('login');
+			login.onkeyup = (e)=>{
+				e.target.value = e.target.value.toUpperCase();
+				
+			}
+			
+			login.onkeydown = (e)=>{
+				log(e);
+				if (!/[_a-zA-Z0-9]/.test(e.key)) 	e.preventDefault();	
+			}
+		
+			onload=()=>log("Document loaded!!!");
+				
 			
 		</script>
 	</body>
