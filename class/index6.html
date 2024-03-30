@@ -24,6 +24,10 @@
 		<!-- event object -->
 		<button id="btn4">Press4 </button>
 		
+		<div id="outer">
+			<div id="inner"></div>
+		</div>
+		
 		
 		 		
 		<script>
@@ -38,8 +42,8 @@
 				log('+++ btn3 extra event handler', new Date());
 			}
 			const handler5=(e)=>{
-				if (e.altKey && e.shiftKey)
-					log('+++ btn4 clicked wth Alt+Shift or Ctr+Shift', new Date());  }
+				if ( (e.altKey && e.shiftKey) || (e.ctrlKey && e.shiftKey))
+					log('+++ btn4 clicked with Alt+Shift or Ctr+Shift', new Date());  }
 			
 			//v.2.
 			const btn2 = document.getElementById('btn2');
@@ -58,7 +62,15 @@
 			btn4.onclick=(e)=>log(e);
 			btn4.addEventListener('click', handler5);
 			
-		
+		    // event propogation
+			const inner = document.getElementById('inner');
+			const outer= document.getElementById('outer');
+			
+			inner.onclick=(e)=>log(e,"++ inner clicked");
+			outer.onclick=(e)=>log(e,"++ outer clicked");
+			
+			
+		    
 		
 		</script>
 	</body>

@@ -1,6 +1,5 @@
 const log=console.log;
 
-
 const pa = (arr=[])=>log(`[${arr}]`);
 
 const mult=()=>{
@@ -26,6 +25,11 @@ const mult=()=>{
 		log(s);
 	};
 
-	
-	
+
+}
+
+function rgb(r=255, g=255, b=255)
+{
+	toHex=(a)=> (a>15)?a.toString(16):'0'+ a.toString(16);
+	return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }

@@ -8,6 +8,19 @@ div, input, select {
 	border-radius:6px;
 }
 
+#inner{
+	width: 50%;
+	height: 8em;
+	position: relative;
+	left: 20%;
+	top: 10%;
+}
+
+#outer{
+	width: 25%;
+	height: 12em;
+}
+
 button {
 	padding: 3px;
 	margin: 3px;
