@@ -30,7 +30,7 @@
 			<div id="inner"></div>
 		</div>
 		<div id="coords"></div>
-		<div id="points"></div>
+		<div id="points"><ol></ol></div>
 		
 		
 		
@@ -72,11 +72,11 @@
 			const outer= document.getElementById('outer');
 			
 			inner.onclick=(e)=>{
-				const r = (99*Math.random()).toFixed();
-				const g = (99*Math.random()).toFixed();
-				const b = (99*Math.random()).toFixed();
-				log(r,g,b);
+				const r = (255*Math.random()).toFixed();
+				const g = (255*Math.random()).toFixed();
+				const b = (255*Math.random()).toFixed();
 				const color = rgb(r,g,b);
+				log(r,g,b,color);
 				inner.setAttribute('style',`background-color:${color}`);
 				
 				
@@ -94,14 +94,17 @@
 			
 			// mousemove Event
 			const coords = document.getElementById('coords');
-			const points = document.getElementById('points'); 
+			const points = document.getElementById('points').firstElementChild; 
 			
 			outer.onmousemove = (e)=>{
-				coords.innerHTML = `X=${e.x}, Y=${e.y}`;	
+				const rect= outer.getBoundingClientRect();
+				const x = rect.x.toFixed();
+				const y = rect.y.toFixed();
+				coords.innerHTML = `X=${e.x},Y=${e.y}, Relative: (${e.x-x},${e.y-y})`;	
 				
-			}
+			};
 			
-			
+						
 			
 		
 		</script>
