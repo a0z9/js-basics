@@ -7,6 +7,8 @@
 		<link href="css/base.css" rel="stylesheet"/>	
 	</head>
 	<body>
+	    <style></style>
+	
 		<h3>JS Learn. Day 6. DOM events.</h3>
 		
 		<!-- v.1-1 -->
@@ -27,6 +29,9 @@
 		<div id="outer">
 			<div id="inner"></div>
 		</div>
+		<div id="coords"></div>
+		<div id="points"></div>
+		
 		
 		
 		 		
@@ -66,11 +71,32 @@
 			const inner = document.getElementById('inner');
 			const outer= document.getElementById('outer');
 			
-			inner.onclick=(e)=>log(e,"++ inner clicked");
+			inner.onclick=(e)=>{
+				const r = (99*Math.random()).toFixed();
+				const g = (99*Math.random()).toFixed();
+				const b = (99*Math.random()).toFixed();
+				log(r,g,b);
+				const color = rgb(r,g,b);
+				inner.setAttribute('style',`background-color:${color}`);
+				
+				
+				log(e,"++ inner clicked");}
 			outer.onclick=(e)=>log(e,"++ outer clicked");
 			
+			// dynamic menubar
+			let menubarTOP = document.createElement('div');
+			menubarTOP.className = 'menu';
+			menubarTOP.innerHTML = 'TOP menu';
+			document.body.insertAdjacentElement('afterBegin',menubarTOP);
 			
-		    
+			menubarTOP.onmouseover = (e)=>e.target.classList.add('menu-activated');
+			menubarTOP.onmouseout = (e)=>e.target.classList.remove('menu-activated');
+			
+			// mousemove Event
+			
+			
+			
+			
 		
 		</script>
 	</body>

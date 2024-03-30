@@ -17,8 +17,17 @@ div, input, select {
 }
 
 #outer{
-	width: 25%;
 	height: 12em;
+}
+
+#outer, #coords, #points{
+	width: 25%;
+}
+
+.menu-activated
+{
+	height: 2em;
+	font: 25px courier;
 }
 
 button {
