@@ -30,6 +30,6 @@ const mult=()=>{
 
 function rgb(r=255, g=255, b=255)
 {
-	toHex=(a)=> (a>15)?Number(a).toString(16):'0'+ Number(a).toString(16);
+	toHex=(a)=> (a>15)?a.toString(16):'0'+ a.toString(16);
 	return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }

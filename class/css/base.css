@@ -24,6 +24,12 @@ div, input, select {
 	width: 25%;
 }
 
+#points {
+	height: 5em;
+	overflow-y: scroll;
+	scroll-snap-type-y: mandatory;
+}
+
 .menu-activated
 {
 	height: 2em;
