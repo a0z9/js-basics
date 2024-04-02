@@ -37,3 +37,4 @@
 - Симпсон К., ES6 и не только, O’Reilly, 2017.
 - Meyer J., HTML5 and JavaScript Projects, APress, 2nd Ed., 2018.
 - Браун Э., Изучаем JavaScript. Руководство по созданию современных веб-сайтов, O’Reilly, 3е изд., 2017.
+- Zakas N.C., Understanding ECMASCript 6, No Starch Pres, 2016.
