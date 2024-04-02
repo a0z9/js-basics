@@ -30,7 +30,7 @@
 - https://codesandbox.io/p/sandbox/lucid-lalande-vanilla?file=%2Fsrc%2Findex.html%3A7%2C1
 
 
-### Полезные книги по базовуму JS
+### Полезные книги по JS
 
 - Флэнаган Д., JavaScript - Полное руководство, O’Reilly, 7е изд., 2021.
 - Симпсон К., Вы не знаете JS, O’Reilly, 2019.
